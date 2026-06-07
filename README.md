@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="github_banner.png" alt="Ayubi GitHub profile banner" width="100%">
-</p>
-
 <h1 align="center">Hi, I'm Ayubi</h1>
 
 <p align="center">
