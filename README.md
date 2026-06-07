@@ -1,28 +1,17 @@
-<h1 align="center">Hi, I'm Ayubi</h1>
+<h1 align="center">Ayubi Fathan</h1>
 
 <p align="center">
-  <strong>Developer and UI/UX enthusiast who enjoys turning ideas into useful, human-friendly digital products.</strong>
+  <strong>UI/UX Enthusiast | Front-End Developer</strong>
 </p>
 
 <p align="center">
   <a href="https://github.com/Zaddyyubiii?tab=repositories">
-    <img src="https://img.shields.io/badge/Explore%20Projects-0D1117?style=for-the-badge&logo=github&logoColor=white" alt="Explore projects">
+    <img src="https://img.shields.io/badge/Repositories-0D1117?style=for-the-badge&logo=github&logoColor=white" alt="Repositories">
   </a>
   <a href="https://github.com/Zaddyyubiii">
-    <img src="https://img.shields.io/badge/Open%20to%20Collaboration-06B6D4?style=for-the-badge&logo=maildotru&logoColor=0D1117" alt="Open to collaboration">
+    <img src="https://img.shields.io/badge/Portfolio%20in%20Progress-06B6D4?style=for-the-badge&logo=readme&logoColor=0D1117" alt="Portfolio in progress">
   </a>
 </p>
-
----
-
-## About Me
-
-I am currently exploring the intersection of software engineering, UI/UX design, data analysis, and product thinking. I like building systems that are not only functional, but also clear, accessible, and easy to use.
-
-- Building with front-end technologies, databases, and product documentation
-- Designing user journeys, interview flows, and interface concepts in Figma
-- Working with data analysis, reporting, and structured problem solving
-- Interested in impact-driven projects for campus, community, and real users
 
 ---
 
@@ -79,10 +68,10 @@ I am currently exploring the intersection of software engineering, UI/UX design,
 ## Current Focus
 
 ```text
-Learning deeper front-end engineering
-Sharpening UI/UX research and product design
-Improving database and data analysis workflows
-Building portfolio-ready projects with clearer documentation
+Front-end engineering
+UI/UX research and product design
+Database and data analysis workflows
+Portfolio-ready project documentation
 ```
 
 ---
@@ -92,16 +81,9 @@ Building portfolio-ready projects with clearer documentation
 <p align="center">
   <img src="https://img.shields.io/badge/Profile-Zaddyyubiii-0D1117?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile">
   <img src="https://img.shields.io/badge/Focus-Front--End%20%7C%20UX%20%7C%20Data-06B6D4?style=for-the-badge" alt="Current focus">
-  <img src="https://img.shields.io/badge/Status-Building%20Portfolio-A855F7?style=for-the-badge" alt="Portfolio status">
+  <img src="https://img.shields.io/badge/Status-Portfolio%20in%20Progress-A855F7?style=for-the-badge" alt="Portfolio status">
 </p>
 
 <p align="center">
   <a href="https://github.com/Zaddyyubiii?tab=repositories">View repositories</a>
-</p>
-
----
-
-<p align="center">
-  <strong>Thanks for visiting.</strong><br>
-  Let's build something useful, thoughtful, and good-looking.
 </p>
