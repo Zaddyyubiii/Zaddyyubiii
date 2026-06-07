@@ -87,15 +87,16 @@ Building portfolio-ready projects with clearer documentation
 
 ---
 
-## GitHub Stats
+## GitHub Snapshot
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Zaddyyubiii&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=06B6D4&text_color=C9D1D9&icon_color=A855F7" alt="Ayubi's GitHub stats">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Zaddyyubiii&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=06B6D4&text_color=C9D1D9" alt="Ayubi's top languages">
+  <img src="https://img.shields.io/badge/Profile-Zaddyyubiii-0D1117?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile">
+  <img src="https://img.shields.io/badge/Focus-Front--End%20%7C%20UX%20%7C%20Data-06B6D4?style=for-the-badge" alt="Current focus">
+  <img src="https://img.shields.io/badge/Status-Building%20Portfolio-A855F7?style=for-the-badge" alt="Portfolio status">
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Zaddyyubiii&theme=tokyonight&hide_border=true&background=0D1117&ring=06B6D4&fire=A855F7&currStreakNum=C9D1D9&sideNums=C9D1D9&sideLabels=C9D1D9&dates=8B949E" alt="Ayubi's GitHub streak">
+  <a href="https://github.com/Zaddyyubiii?tab=repositories">View repositories</a>
 </p>
 
 ---
