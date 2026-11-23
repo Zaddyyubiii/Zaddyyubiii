@@ -1,89 +1,139 @@
-<h1 align="center">Ayubi Fathan</h1>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg">
+  <img alt="Ayubi Fathan - UI/UX Designer and Frontend Developer" src="./assets/hero-light.svg" width="100%">
+</picture>
 
 <p align="center">
-  <strong>UI/UX Enthusiast | Front-End Developer</strong>
-</p>
-
-<p align="center">
+  <a href="https://www.linkedin.com/in/ayubifathan">
+    <img src="https://img.shields.io/badge/LinkedIn-Ayubi_Fathan-013AA7?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  <a href="mailto:ayubi300306@gmail.com">
+    <img src="https://img.shields.io/badge/Email-ayubi300306%40gmail.com-001741?style=flat-square&logo=gmail&logoColor=white" alt="Email">
+  </a>
+  <a href="https://devpost.com/software/taniplus">
+    <img src="https://img.shields.io/badge/Devpost-TaniPlus-2563EB?style=flat-square&logo=devpost&logoColor=white" alt="TaniPlus on Devpost">
+  </a>
   <a href="https://github.com/Zaddyyubiii?tab=repositories">
-    <img src="https://img.shields.io/badge/Repositories-0D1117?style=for-the-badge&logo=github&logoColor=white" alt="Repositories">
-  </a>
-  <a href="https://github.com/Zaddyyubiii">
-    <img src="https://img.shields.io/badge/Portfolio%20in%20Progress-06B6D4?style=for-the-badge&logo=readme&logoColor=0D1117" alt="Portfolio in progress">
+    <img src="https://img.shields.io/badge/GitHub-Repositories-1E293B?style=flat-square&logo=github&logoColor=white" alt="GitHub Repositories">
   </a>
 </p>
 
----
-
-## Tech Stack
+## About & Current Roles
 
 <table>
   <tr>
-    <td valign="top" width="33%">
-      <h3>Languages</h3>
+    <td valign="top" width="58%">
       <p>
-        <img src="https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=111111" alt="C">
-        <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++">
-        <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java">
-        <img src="https://img.shields.io/badge/Scala-DC322F?style=flat-square&logo=scala&logoColor=white" alt="Scala">
-        <img src="https://img.shields.io/badge/SQL-00758F?style=flat-square&logo=mysql&logoColor=white" alt="SQL">
-        <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5">
+        I am a Computer Science undergraduate at IPB University working across UI/UX design and frontend development. My work focuses on turning user needs into structured digital products through UX research, user flows, wireframing, prototyping, and web implementation.
+      </p>
+      <p>
+        Outside coursework, I design campus-scale platforms and visual systems for student orientation and organizational teams, bridging product design with engineering execution.
       </p>
     </td>
-    <td valign="top" width="33%">
-      <h3>Development</h3>
-      <p>
-        <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js">
-        <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git">
-        <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub">
-        <img src="https://img.shields.io/badge/Wrangler-F38020?style=flat-square&logo=cloudflare&logoColor=white" alt="Wrangler">
-      </p>
+    <td valign="top" width="42%">
+      <p><strong>OMB IPB 63</strong><br>Information Systems, Communication &amp; Visual (Dec 2025 - Present)</p>
+      <p><strong>HIMALKOM IPB</strong><br>Talent &amp; Development, Lead Organizer of I-CONVO Podcast (Jan 2026 - Present)</p>
+      <p><strong>IPB University</strong><br>B.Sc. Computer Science (2024 - 2028)</p>
     </td>
+  </tr>
+</table>
+
+## Featured Project
+
+<table>
+  <tr>
+    <td width="58%" valign="middle">
+      <a href="https://agrisymphony.com/">
+        <img src="./assets/agrisymphony-preview.png" alt="Agrisymphony 2026 live website preview" width="100%">
+      </a>
+    </td>
+    <td width="42%" valign="top">
+      <img src="https://img.shields.io/badge/FLAGSHIP_CASE-OMB_IPB_63-013AA7?style=flat-square" alt="Flagship Case OMB IPB 63">
+      <h3><a href="https://agrisymphony.com/">Agrisymphony 2026</a></h3>
+      <p><strong>UI/UX Designer</strong> | Mar 2026 - Aug 2026</p>
+      <p>
+        Designed the user interface and experience for IPB University's annual festival and student orientation platform, structuring event navigation (About, Schedule, Gallery, Emergency, and Store) into clear, responsive web flows.
+      </p>
+      <p><sub>Information Architecture · User Flows · Responsive UI</sub></p>
+      <a href="https://agrisymphony.com/">
+        <img src="https://img.shields.io/badge/Visit_Live_Site-agrisymphony.com-013AA7?style=flat-square&logo=googlechrome&logoColor=white" alt="Visit agrisymphony.com">
+      </a>
+    </td>
+  </tr>
+</table>
+
+## Selected Work
+
+### Product & UI/UX
+
+| Project | Context | Contribution |
+| --- | --- | --- |
+| [**TaniPlus**](https://devpost.com/software/taniplus) | Garuda Hacks 7.0 (Jul - Aug 2026) | Designed UI/UX, user flows, and wireframes for an IoT precision agriculture platform turning sensor and soil metrics into clear farmer actions. |
+| **MySOC & StudentOrientation** | OMB IPB 63 (Jan - Jul 2026) | Built interface components, user flows, and wireframes to organize orientation schedules and campus services for new IPB University students. |
+| **IPB Preloved** | Campus Marketplace (Jan - Jun 2026) | Designed browsing, search, and product discovery flows for a student second-hand marketplace. |
+| **OrmawaEksekutif.com & Sakarsakos.com** | Ormawa Eksekutif PKU IPB (Dec 2024 - Aug 2025) | Created website layouts, visual assets, and UI components for student organization profiling and student housing discovery. |
+
+### Code Repositories
+
+- [`Proyek-Analisis-Data-Asah-by-Dicoding-`](https://github.com/Zaddyyubiii/Proyek-Analisis-Data-Asah-by-Dicoding-) (Jupyter Notebook, Python): Data analysis project built for Asah by Dicoding.
+- [`Ular-Tangga-IPB`](https://github.com/Zaddyyubiii/Ular-Tangga-IPB) (C#, WebGL, [Live Demo](https://zaddyyubiii.github.io/Ular-Tangga-IPB/)): Interactive campus-themed board game deployed on GitHub Pages.
+- [`Project-Akhir-Metkuan`](https://github.com/Zaddyyubiii/Project-Akhir-Metkuan) (R): Quantitative methods final analysis repository.
+- [`rumah_sakit_crud`](https://github.com/Zaddyyubiii/rumah_sakit_crud) (PHP): Hospital records CRUD web application.
+
+## Toolkit & Tech Stack
+
+<table>
+  <tr>
     <td valign="top" width="34%">
-      <h3>Design & Research</h3>
+      <h4>Design &amp; UX</h4>
       <p>
-        <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white" alt="Figma">
-        <img src="https://img.shields.io/badge/Canva-00C4CC?style=flat-square&logo=canva&logoColor=white" alt="Canva">
-        <img src="https://img.shields.io/badge/UX%20Research-7C3AED?style=flat-square" alt="UX Research">
-        <img src="https://img.shields.io/badge/User%20Journey-06B6D4?style=flat-square" alt="User Journey">
+        <img src="https://img.shields.io/badge/Figma-013AA7?style=flat-square&logo=figma&logoColor=white" alt="Figma">
+        <img src="https://img.shields.io/badge/Affinity_Designer-013AA7?style=flat-square&logo=affinitydesigner&logoColor=white" alt="Affinity Designer">
+        <img src="https://img.shields.io/badge/Canva-013AA7?style=flat-square&logo=canva&logoColor=white" alt="Canva">
+        <img src="https://img.shields.io/badge/CapCut-013AA7?style=flat-square" alt="CapCut">
+        <img src="https://img.shields.io/badge/UX_Research-013AA7?style=flat-square" alt="UX Research">
+        <img src="https://img.shields.io/badge/User_Flow-013AA7?style=flat-square" alt="User Flow">
+        <img src="https://img.shields.io/badge/Wireframing-013AA7?style=flat-square" alt="Wireframing">
+        <img src="https://img.shields.io/badge/Prototyping-013AA7?style=flat-square" alt="Prototyping">
+        <img src="https://img.shields.io/badge/Design_System-013AA7?style=flat-square" alt="Design System">
+      </p>
+    </td>
+    <td valign="top" width="33%">
+      <h4>Languages</h4>
+      <p>
+        <img src="https://img.shields.io/badge/C-001741?style=flat-square&logo=c&logoColor=white" alt="C">
+        <img src="https://img.shields.io/badge/C++-001741?style=flat-square&logo=cplusplus&logoColor=white" alt="C++">
+        <img src="https://img.shields.io/badge/Java-001741?style=flat-square&logo=openjdk&logoColor=white" alt="Java">
+        <img src="https://img.shields.io/badge/Scala-001741?style=flat-square&logo=scala&logoColor=white" alt="Scala">
+        <img src="https://img.shields.io/badge/SQL-001741?style=flat-square&logo=mysql&logoColor=white" alt="SQL">
+        <img src="https://img.shields.io/badge/HTML5-001741?style=flat-square&logo=html5&logoColor=white" alt="HTML5">
+      </p>
+    </td>
+    <td valign="top" width="33%">
+      <h4>Development</h4>
+      <p>
+        <img src="https://img.shields.io/badge/Next.js-1E293B?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js">
+        <img src="https://img.shields.io/badge/Git-1E293B?style=flat-square&logo=git&logoColor=white" alt="Git">
+        <img src="https://img.shields.io/badge/GitHub-1E293B?style=flat-square&logo=github&logoColor=white" alt="GitHub">
+        <img src="https://img.shields.io/badge/Wrangler-1E293B?style=flat-square&logo=cloudflare&logoColor=white" alt="Wrangler">
       </p>
     </td>
   </tr>
 </table>
 
----
+## Live GitHub Activity
 
-## Featured Work
-
-| Project / Experience | Role | What I Worked On |
-| --- | --- | --- |
-| **IPB Pre-Loved** | Technical Specification Developer | Wrote and structured technical specifications for an internal campus marketplace platform. |
-| **MagangHub Platform** | UX Analyst & Interview Architect | Analyzed user experience, mapped end-to-end user journeys, and created interview templates in Figma for problem validation. |
-| **Risbang Investigation 4.0** | Lead Data Analyst & Reporting Head | Led data analysis and strategic reporting for Ormawa Eksekutif PKU research and development work. |
-| **Personal Website** | Front-End Developer | Built a personal profile website using HTML while focusing on structure and visual presentation. |
-| **Academic Tech Projects** | Database Architect & Graphics Developer | Collaborated on database ERD design with Draw.io and computer graphics / visualization coursework. |
-
----
-
-## Current Focus
-
-```text
-Front-end engineering
-UI/UX research and product design
-Database and data analysis workflows
-Portfolio-ready project documentation
-```
-
----
-
-## GitHub Snapshot
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/github-snapshot-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/github-snapshot-light.svg">
+  <img alt="Live GitHub Activity Snapshot for Zaddyyubiii" src="./assets/github-snapshot-light.svg" width="100%">
+</picture>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Profile-Zaddyyubiii-0D1117?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile">
-  <img src="https://img.shields.io/badge/Focus-Front--End%20%7C%20UX%20%7C%20Data-06B6D4?style=for-the-badge" alt="Current focus">
-  <img src="https://img.shields.io/badge/Status-Portfolio%20in%20Progress-A855F7?style=for-the-badge" alt="Portfolio status">
+  <sub>Synced daily via GitHub Actions from public repository data.</sub>
 </p>
 
 <p align="center">
-  <a href="https://github.com/Zaddyyubiii?tab=repositories">View repositories</a>
+  Open to UI/UX design and frontend collaboration: <a href="https://www.linkedin.com/in/ayubifathan">LinkedIn</a> · <a href="mailto:ayubi300306@gmail.com">Email</a>
 </p>
