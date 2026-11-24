@@ -5,18 +5,11 @@
 </picture>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/ayubifathan">
-    <img src="https://img.shields.io/badge/LinkedIn-Ayubi_Fathan-013AA7?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn">
-  </a>
-  <a href="mailto:ayubi300306@gmail.com">
-    <img src="https://img.shields.io/badge/Email-ayubi300306%40gmail.com-001741?style=flat-square&logo=gmail&logoColor=white" alt="Email">
-  </a>
-  <a href="https://devpost.com/software/taniplus">
-    <img src="https://img.shields.io/badge/Devpost-TaniPlus-2563EB?style=flat-square&logo=devpost&logoColor=white" alt="TaniPlus on Devpost">
-  </a>
-  <a href="https://github.com/Zaddyyubiii?tab=repositories">
-    <img src="https://img.shields.io/badge/GitHub-Repositories-1E293B?style=flat-square&logo=github&logoColor=white" alt="GitHub Repositories">
-  </a>
+  <a href="https://www.linkedin.com/in/ayubifathan"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/linkedin-dark.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/pills/linkedin-light.svg"><img alt="LinkedIn" src="./assets/pills/linkedin-light.svg" height="34"></picture></a>&nbsp;
+  <a href="mailto:ayubi300306@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/email-dark.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/pills/email-light.svg"><img alt="Email" src="./assets/pills/email-light.svg" height="34"></picture></a>&nbsp;
+  <a href="https://agrisymphony.com/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/agrisymphony-dark.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/pills/agrisymphony-light.svg"><img alt="Agrisymphony" src="./assets/pills/agrisymphony-light.svg" height="34"></picture></a>&nbsp;
+  <a href="https://devpost.com/software/taniplus"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/taniplus-dark.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/pills/taniplus-light.svg"><img alt="TaniPlus" src="./assets/pills/taniplus-light.svg" height="34"></picture></a>&nbsp;
+  <a href="https://github.com/Zaddyyubiii?tab=repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/repositories-dark.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/pills/repositories-light.svg"><img alt="Repositories" src="./assets/pills/repositories-light.svg" height="34"></picture></a>
 </p>
 
 ## About & Current Roles
@@ -49,7 +42,7 @@
       </a>
     </td>
     <td width="42%" valign="top">
-      <img src="https://img.shields.io/badge/FLAGSHIP_CASE-OMB_IPB_63-013AA7?style=flat-square" alt="Flagship Case OMB IPB 63">
+      <img src="https://img.shields.io/badge/FLAGSHIP_CASE-OMB_IPB_63-44578C?style=flat" alt="Flagship Case OMB IPB 63">
       <h3><a href="https://agrisymphony.com/">Agrisymphony 2026</a></h3>
       <p><strong>UI/UX Designer</strong> | Mar 2026 - Aug 2026</p>
       <p>
@@ -57,7 +50,7 @@
       </p>
       <p><sub>Information Architecture · User Flows · Responsive UI</sub></p>
       <a href="https://agrisymphony.com/">
-        <img src="https://img.shields.io/badge/Visit_Live_Site-agrisymphony.com-013AA7?style=flat-square&logo=googlechrome&logoColor=white" alt="Visit agrisymphony.com">
+        <img src="https://img.shields.io/badge/Visit_Live_Site-agrisymphony.com-44578C?style=flat&logo=googlechrome&logoColor=white" alt="Visit agrisymphony.com">
       </a>
     </td>
   </tr>
@@ -88,35 +81,35 @@
     <td valign="top" width="34%">
       <h4>Design &amp; UX</h4>
       <p>
-        <img src="https://img.shields.io/badge/Figma-013AA7?style=flat-square&logo=figma&logoColor=white" alt="Figma">
-        <img src="https://img.shields.io/badge/Affinity_Designer-013AA7?style=flat-square&logo=affinitydesigner&logoColor=white" alt="Affinity Designer">
-        <img src="https://img.shields.io/badge/Canva-013AA7?style=flat-square&logo=canva&logoColor=white" alt="Canva">
-        <img src="https://img.shields.io/badge/CapCut-013AA7?style=flat-square" alt="CapCut">
-        <img src="https://img.shields.io/badge/UX_Research-013AA7?style=flat-square" alt="UX Research">
-        <img src="https://img.shields.io/badge/User_Flow-013AA7?style=flat-square" alt="User Flow">
-        <img src="https://img.shields.io/badge/Wireframing-013AA7?style=flat-square" alt="Wireframing">
-        <img src="https://img.shields.io/badge/Prototyping-013AA7?style=flat-square" alt="Prototyping">
-        <img src="https://img.shields.io/badge/Design_System-013AA7?style=flat-square" alt="Design System">
+        <img src="https://img.shields.io/badge/Figma-44578C?style=flat&logo=figma&logoColor=white" alt="Figma">
+        <img src="https://img.shields.io/badge/Affinity_Designer-44578C?style=flat&logo=affinitydesigner&logoColor=white" alt="Affinity Designer">
+        <img src="https://img.shields.io/badge/Canva-44578C?style=flat&logo=canva&logoColor=white" alt="Canva">
+        <img src="https://img.shields.io/badge/CapCut-44578C?style=flat" alt="CapCut">
+        <img src="https://img.shields.io/badge/UX_Research-44578C?style=flat" alt="UX Research">
+        <img src="https://img.shields.io/badge/User_Flow-44578C?style=flat" alt="User Flow">
+        <img src="https://img.shields.io/badge/Wireframing-44578C?style=flat" alt="Wireframing">
+        <img src="https://img.shields.io/badge/Prototyping-44578C?style=flat" alt="Prototyping">
+        <img src="https://img.shields.io/badge/Design_System-44578C?style=flat" alt="Design System">
       </p>
     </td>
     <td valign="top" width="33%">
       <h4>Languages</h4>
       <p>
-        <img src="https://img.shields.io/badge/C-001741?style=flat-square&logo=c&logoColor=white" alt="C">
-        <img src="https://img.shields.io/badge/C++-001741?style=flat-square&logo=cplusplus&logoColor=white" alt="C++">
-        <img src="https://img.shields.io/badge/Java-001741?style=flat-square&logo=openjdk&logoColor=white" alt="Java">
-        <img src="https://img.shields.io/badge/Scala-001741?style=flat-square&logo=scala&logoColor=white" alt="Scala">
-        <img src="https://img.shields.io/badge/SQL-001741?style=flat-square&logo=mysql&logoColor=white" alt="SQL">
-        <img src="https://img.shields.io/badge/HTML5-001741?style=flat-square&logo=html5&logoColor=white" alt="HTML5">
+        <img src="https://img.shields.io/badge/C-2C3A5E?style=flat&logo=c&logoColor=white" alt="C">
+        <img src="https://img.shields.io/badge/C++-2C3A5E?style=flat&logo=cplusplus&logoColor=white" alt="C++">
+        <img src="https://img.shields.io/badge/Java-2C3A5E?style=flat&logo=openjdk&logoColor=white" alt="Java">
+        <img src="https://img.shields.io/badge/Scala-2C3A5E?style=flat&logo=scala&logoColor=white" alt="Scala">
+        <img src="https://img.shields.io/badge/SQL-2C3A5E?style=flat&logo=mysql&logoColor=white" alt="SQL">
+        <img src="https://img.shields.io/badge/HTML5-2C3A5E?style=flat&logo=html5&logoColor=white" alt="HTML5">
       </p>
     </td>
     <td valign="top" width="33%">
       <h4>Development</h4>
       <p>
-        <img src="https://img.shields.io/badge/Next.js-1E293B?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js">
-        <img src="https://img.shields.io/badge/Git-1E293B?style=flat-square&logo=git&logoColor=white" alt="Git">
-        <img src="https://img.shields.io/badge/GitHub-1E293B?style=flat-square&logo=github&logoColor=white" alt="GitHub">
-        <img src="https://img.shields.io/badge/Wrangler-1E293B?style=flat-square&logo=cloudflare&logoColor=white" alt="Wrangler">
+        <img src="https://img.shields.io/badge/Next.js-3A4C7A?style=flat&logo=nextdotjs&logoColor=white" alt="Next.js">
+        <img src="https://img.shields.io/badge/Git-3A4C7A?style=flat&logo=git&logoColor=white" alt="Git">
+        <img src="https://img.shields.io/badge/GitHub-3A4C7A?style=flat&logo=github&logoColor=white" alt="GitHub">
+        <img src="https://img.shields.io/badge/Wrangler-3A4C7A?style=flat&logo=cloudflare&logoColor=white" alt="Wrangler">
       </p>
     </td>
   </tr>

@@ -90,36 +90,36 @@ function renderSnapshotSvg({
   const isDark = theme === 'dark';
   const palette = isDark
     ? {
-        bg: '#0B1220',
-        border: '#1E2E4D',
-        cardBg: '#101A2E',
-        cardBorder: '#1E3A6E',
-        divider: '#1E2E4D',
-        textPrimary: '#FFFFFF',
-        textSecondary: '#94A3B8',
-        accentText: '#60A5FA',
-        tagBg: '#013AA7',
-        tagText: '#FFFFFF',
-        langTagBg: '#152340',
-        langTagText: '#93C5FD',
-        barTrack: '#152340',
-        shades: ['#2563EB', '#60A5FA', '#013AA7', '#93C5FD', '#475569', '#334155']
+        bg: '#161C2B',
+        border: '#2F3C59',
+        cardBg: '#1D2538',
+        cardBorder: '#334263',
+        divider: '#2F3C59',
+        textPrimary: '#FAE2C6',
+        textSecondary: '#C8D3EC',
+        accentText: '#9BB3E8',
+        tagBg: '#FAE2C6',
+        tagText: '#161C2B',
+        langTagBg: '#25304A',
+        langTagText: '#FAE2C6',
+        barTrack: '#25304A',
+        shades: ['#FAE2C6', '#9BB3E8', '#657CAF', '#C4D3F2', '#C9AE90', '#586A8F']
       }
     : {
-        bg: '#F4F7FC',
-        border: '#CBD8EC',
-        cardBg: '#FFFFFF',
-        cardBorder: '#D4DFEE',
-        divider: '#CBD8EC',
-        textPrimary: '#001741',
-        textSecondary: '#334155',
-        accentText: '#013AA7',
-        tagBg: '#013AA7',
-        tagText: '#FFFFFF',
-        langTagBg: '#E8F0FE',
-        langTagText: '#013AA7',
-        barTrack: '#DCE7FB',
-        shades: ['#013AA7', '#2563EB', '#3B82F6', '#60A5FA', '#64748B', '#94A3B8']
+        bg: '#FAE2C6',
+        border: '#D4B898',
+        cardBg: '#FDF4E7',
+        cardBorder: '#DFC7AB',
+        divider: '#D4B898',
+        textPrimary: '#44578C',
+        textSecondary: '#4A5B82',
+        accentText: '#44578C',
+        tagBg: '#44578C',
+        tagText: '#FAE2C6',
+        langTagBg: '#EFE0CD',
+        langTagText: '#44578C',
+        barTrack: '#EAD1B5',
+        shades: ['#44578C', '#657CAF', '#879CC7', '#A6B7D9', '#7D6A58', '#B8A28B']
       };
 
   const barWidth = 536;
@@ -142,7 +142,7 @@ function renderSnapshotSvg({
     const label = `${truncate(lang.name, 18)} ${lang.percent.toFixed(1)}%`;
     return `
       <rect x="${x}" y="${y - 9}" width="9" height="9" rx="1.5" fill="${color}" />
-      <text x="${x + 15}" y="${y}" class="sans" font-size="11.5" font-weight="500" fill="${palette.textSecondary}">${escapeXml(label)}</text>`;
+      <text x="${x + 15}" y="${y}" class="sans" font-size="11.5" font-weight="400" fill="${palette.textSecondary}">${escapeXml(label)}</text>`;
   });
 
   const repoRows = recentRepos.map((repo, idx) => {
@@ -153,35 +153,38 @@ function renderSnapshotSvg({
 
     return `
       <g class="row-${idx + 1}">
-        <rect x="634" y="${y}" width="522" height="44" rx="4" fill="${palette.cardBg}" stroke="${palette.cardBorder}" />
-        <text x="650" y="${y + 26.5}" class="sans" font-size="13.5" font-weight="700" fill="${palette.textPrimary}">${repoName}</text>
-        <rect x="944" y="${y + 11}" width="106" height="22" rx="2" fill="${palette.langTagBg}" />
-        <text x="997" y="${y + 25.5}" class="sans" font-size="11" font-weight="600" fill="${palette.langTagText}" text-anchor="middle">${langLabel}</text>
-        <text x="1140" y="${y + 26}" class="sans" font-size="11.5" font-weight="500" fill="${palette.textSecondary}" text-anchor="end">${pushedLabel}</text>
+        <rect x="634" y="${y}" width="522" height="44" rx="6" fill="${palette.cardBg}" stroke="${palette.cardBorder}" />
+        <text x="650" y="${y + 26.5}" class="sans" font-size="13.5" font-weight="500" fill="${palette.textPrimary}">${repoName}</text>
+        <rect x="944" y="${y + 11}" width="106" height="22" rx="3" fill="${palette.langTagBg}" />
+        <text x="997" y="${y + 25.5}" class="sans" font-size="11" font-weight="500" fill="${palette.langTagText}" text-anchor="middle">${langLabel}</text>
+        <text x="1140" y="${y + 26}" class="sans" font-size="11.5" font-weight="400" fill="${palette.textSecondary}" text-anchor="end">${pushedLabel}</text>
       </g>`;
   });
 
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 265" width="1200" height="265" role="img" aria-labelledby="snap-${theme}-title snap-${theme}-desc">
   <title id="snap-${theme}-title">Live GitHub Activity Snapshot for ${escapeXml(USERNAME)}</title>
-  <desc id="snap-${theme}-desc">Auto-generated summary of public repositories, programming languages, and recent repository updates.</desc>
+  <desc id="snap-${theme}-desc">Auto-generated editorial summary of public repositories, programming languages, and recent repository updates.</desc>
   <defs>
     <clipPath id="snap-clip-${theme}">
-      <rect x="0" y="0" width="1200" height="265" rx="12" />
+      <rect x="0" y="0" width="1200" height="265" rx="14" />
     </clipPath>
     <clipPath id="bar-clip-${theme}">
       <rect x="44" y="152" width="${barWidth}" height="10" rx="5" />
     </clipPath>
     <style>
+      .serif {
+        font-family: 'Instrument Serif', Georgia, 'Times New Roman', serif;
+      }
       .sans {
-        font-family: 'Plus Jakarta Sans', 'Instrument Sans', 'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+        font-family: 'Outfit', 'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
       }
       @keyframes rowEnter {
         0% { opacity: 0.92; transform: translateX(6px); }
         100% { opacity: 1; transform: translateX(0); }
       }
-      .row-1 { animation: rowEnter 0.4s cubic-bezier(0.22, 1, 0.36, 1) 0s both; }
-      .row-2 { animation: rowEnter 0.4s cubic-bezier(0.22, 1, 0.36, 1) 0.06s both; }
-      .row-3 { animation: rowEnter 0.4s cubic-bezier(0.22, 1, 0.36, 1) 0.12s both; }
+      .row-1 { animation: rowEnter 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0s both; }
+      .row-2 { animation: rowEnter 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.08s both; }
+      .row-3 { animation: rowEnter 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.16s both; }
       @media (prefers-reduced-motion: reduce) {
         * {
           animation: none !important;
@@ -194,26 +197,26 @@ function renderSnapshotSvg({
 
   <g clip-path="url(#snap-clip-${theme})">
     <rect x="0" y="0" width="1200" height="265" fill="${palette.bg}" />
-    <rect x="0.5" y="0.5" width="1199" height="264" rx="12" fill="none" stroke="${palette.border}" />
+    <rect x="0.5" y="0.5" width="1199" height="264" rx="14" fill="none" stroke="${palette.border}" />
 
     <!-- Left Panel: Metrics & Language Breakdown -->
     <rect x="44" y="28" width="184" height="24" rx="0" fill="${palette.tagBg}" />
-    <text x="136" y="44" class="sans" font-size="11" font-weight="700" fill="${palette.tagText}" text-anchor="middle" letter-spacing="0.4">LIVE GITHUB SNAPSHOT</text>
+    <text x="136" y="44" class="sans" font-size="11" font-weight="500" fill="${palette.tagText}" text-anchor="middle" letter-spacing="0.5">LIVE GITHUB SNAPSHOT</text>
 
-    <!-- 3 Verified Real Metrics -->
-    <text x="44" y="92" class="sans" font-size="25" font-weight="800" fill="${palette.textPrimary}">${escapeXml(publicRepos)}</text>
-    <text x="44" y="111" class="sans" font-size="11.5" font-weight="500" fill="${palette.textSecondary}">Public Repositories</text>
+    <!-- 3 Verified Real Metrics in Editorial Serif -->
+    <text x="44" y="94" class="serif" font-size="30" font-weight="400" fill="${palette.textPrimary}">${escapeXml(publicRepos)}</text>
+    <text x="44" y="113" class="sans" font-size="11.5" font-weight="400" fill="${palette.textSecondary}">Public Repositories</text>
 
-    <line x1="196" y1="68" x2="196" y2="112" stroke="${palette.divider}" stroke-width="1" />
-    <text x="216" y="92" class="sans" font-size="25" font-weight="800" fill="${palette.textPrimary}">${escapeXml(languagesCount)}</text>
-    <text x="216" y="111" class="sans" font-size="11.5" font-weight="500" fill="${palette.textSecondary}">Languages Detected</text>
+    <line x1="196" y1="68" x2="196" y2="114" stroke="${palette.divider}" stroke-width="1" />
+    <text x="216" y="94" class="serif" font-size="30" font-weight="400" fill="${palette.textPrimary}">${escapeXml(languagesCount)}</text>
+    <text x="216" y="113" class="sans" font-size="11.5" font-weight="400" fill="${palette.textSecondary}">Languages Detected</text>
 
-    <line x1="384" y1="68" x2="384" y2="112" stroke="${palette.divider}" stroke-width="1" />
-    <text x="404" y="92" class="sans" font-size="25" font-weight="800" fill="${palette.accentText}">${escapeXml(latestPushLabel)}</text>
-    <text x="404" y="111" class="sans" font-size="11.5" font-weight="500" fill="${palette.textSecondary}">Latest Push</text>
+    <line x1="384" y1="68" x2="384" y2="114" stroke="${palette.divider}" stroke-width="1" />
+    <text x="404" y="94" class="serif" font-size="30" font-weight="400" fill="${palette.accentText}">${escapeXml(latestPushLabel)}</text>
+    <text x="404" y="113" class="sans" font-size="11.5" font-weight="400" fill="${palette.textSecondary}">Latest Push</text>
 
     <!-- Language Distribution Bar -->
-    <text x="44" y="141" class="sans" font-size="10.5" font-weight="700" fill="${palette.textSecondary}" letter-spacing="0.5">PUBLIC REPOSITORY LANGUAGES</text>
+    <text x="44" y="141" class="sans" font-size="10.5" font-weight="500" fill="${palette.textSecondary}" letter-spacing="0.5">PUBLIC REPOSITORY LANGUAGES</text>
     <rect x="44" y="152" width="${barWidth}" height="10" rx="5" fill="${palette.barTrack}" />
     <g clip-path="url(#bar-clip-${theme})">
       ${barSegments.join('\n      ')}
@@ -226,10 +229,10 @@ function renderSnapshotSvg({
     <line x1="608" y1="28" x2="608" y2="236" stroke="${palette.divider}" stroke-width="1" />
 
     <!-- Right Panel: Recently Updated Repositories -->
-    <text x="634" y="44" class="sans" font-size="11" font-weight="700" fill="${palette.textSecondary}" letter-spacing="0.5">RECENTLY UPDATED REPOSITORIES</text>
+    <text x="634" y="44" class="sans" font-size="11" font-weight="500" fill="${palette.textSecondary}" letter-spacing="0.5">RECENTLY UPDATED REPOSITORIES</text>
     ${repoRows.join('\n')}
 
-    <text x="1156" y="242" class="sans" font-size="11" font-weight="500" fill="${palette.textSecondary}" text-anchor="end">Auto-synced via GitHub Actions · ${escapeXml(syncedDate)} UTC</text>
+    <text x="1156" y="242" class="sans" font-size="11" font-weight="400" fill="${palette.textSecondary}" text-anchor="end">Auto-synced via GitHub Actions · ${escapeXml(syncedDate)} UTC</text>
   </g>
 </svg>
 `;

@@ -1,24 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 265" width="1200" height="265" role="img" aria-labelledby="snap-light-title snap-light-desc">
   <title id="snap-light-title">Live GitHub Activity Snapshot for Zaddyyubiii</title>
-  <desc id="snap-light-desc">Auto-generated summary of public repositories, programming languages, and recent repository updates.</desc>
+  <desc id="snap-light-desc">Auto-generated editorial summary of public repositories, programming languages, and recent repository updates.</desc>
   <defs>
     <clipPath id="snap-clip-light">
-      <rect x="0" y="0" width="1200" height="265" rx="12" />
+      <rect x="0" y="0" width="1200" height="265" rx="14" />
     </clipPath>
     <clipPath id="bar-clip-light">
       <rect x="44" y="152" width="536" height="10" rx="5" />
     </clipPath>
     <style>
+      .serif {
+        font-family: 'Instrument Serif', Georgia, 'Times New Roman', serif;
+      }
       .sans {
-        font-family: 'Plus Jakarta Sans', 'Instrument Sans', 'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+        font-family: 'Outfit', 'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
       }
       @keyframes rowEnter {
         0% { opacity: 0.92; transform: translateX(6px); }
         100% { opacity: 1; transform: translateX(0); }
       }
-      .row-1 { animation: rowEnter 0.4s cubic-bezier(0.22, 1, 0.36, 1) 0s both; }
-      .row-2 { animation: rowEnter 0.4s cubic-bezier(0.22, 1, 0.36, 1) 0.06s both; }
-      .row-3 { animation: rowEnter 0.4s cubic-bezier(0.22, 1, 0.36, 1) 0.12s both; }
+      .row-1 { animation: rowEnter 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0s both; }
+      .row-2 { animation: rowEnter 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.08s both; }
+      .row-3 { animation: rowEnter 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.16s both; }
       @media (prefers-reduced-motion: reduce) {
         * {
           animation: none !important;
@@ -30,82 +33,82 @@
   </defs>
 
   <g clip-path="url(#snap-clip-light)">
-    <rect x="0" y="0" width="1200" height="265" fill="#F4F7FC" />
-    <rect x="0.5" y="0.5" width="1199" height="264" rx="12" fill="none" stroke="#CBD8EC" />
+    <rect x="0" y="0" width="1200" height="265" fill="#FAE2C6" />
+    <rect x="0.5" y="0.5" width="1199" height="264" rx="14" fill="none" stroke="#D4B898" />
 
     <!-- Left Panel: Metrics & Language Breakdown -->
-    <rect x="44" y="28" width="184" height="24" rx="0" fill="#013AA7" />
-    <text x="136" y="44" class="sans" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.4">LIVE GITHUB SNAPSHOT</text>
+    <rect x="44" y="28" width="184" height="24" rx="0" fill="#44578C" />
+    <text x="136" y="44" class="sans" font-size="11" font-weight="500" fill="#FAE2C6" text-anchor="middle" letter-spacing="0.5">LIVE GITHUB SNAPSHOT</text>
 
-    <!-- 3 Verified Real Metrics -->
-    <text x="44" y="92" class="sans" font-size="25" font-weight="800" fill="#001741">8</text>
-    <text x="44" y="111" class="sans" font-size="11.5" font-weight="500" fill="#334155">Public Repositories</text>
+    <!-- 3 Verified Real Metrics in Editorial Serif -->
+    <text x="44" y="94" class="serif" font-size="30" font-weight="400" fill="#44578C">8</text>
+    <text x="44" y="113" class="sans" font-size="11.5" font-weight="400" fill="#4A5B82">Public Repositories</text>
 
-    <line x1="196" y1="68" x2="196" y2="112" stroke="#CBD8EC" stroke-width="1" />
-    <text x="216" y="92" class="sans" font-size="25" font-weight="800" fill="#001741">11</text>
-    <text x="216" y="111" class="sans" font-size="11.5" font-weight="500" fill="#334155">Languages Detected</text>
+    <line x1="196" y1="68" x2="196" y2="114" stroke="#D4B898" stroke-width="1" />
+    <text x="216" y="94" class="serif" font-size="30" font-weight="400" fill="#44578C">11</text>
+    <text x="216" y="113" class="sans" font-size="11.5" font-weight="400" fill="#4A5B82">Languages Detected</text>
 
-    <line x1="384" y1="68" x2="384" y2="112" stroke="#CBD8EC" stroke-width="1" />
-    <text x="404" y="92" class="sans" font-size="25" font-weight="800" fill="#013AA7">Nov 2026</text>
-    <text x="404" y="111" class="sans" font-size="11.5" font-weight="500" fill="#334155">Latest Push</text>
+    <line x1="384" y1="68" x2="384" y2="114" stroke="#D4B898" stroke-width="1" />
+    <text x="404" y="94" class="serif" font-size="30" font-weight="400" fill="#44578C">Nov 2026</text>
+    <text x="404" y="113" class="sans" font-size="11.5" font-weight="400" fill="#4A5B82">Latest Push</text>
 
     <!-- Language Distribution Bar -->
-    <text x="44" y="141" class="sans" font-size="10.5" font-weight="700" fill="#334155" letter-spacing="0.5">PUBLIC REPOSITORY LANGUAGES</text>
-    <rect x="44" y="152" width="536" height="10" rx="5" fill="#DCE7FB" />
+    <text x="44" y="141" class="sans" font-size="10.5" font-weight="500" fill="#4A5B82" letter-spacing="0.5">PUBLIC REPOSITORY LANGUAGES</text>
+    <rect x="44" y="152" width="536" height="10" rx="5" fill="#EAD1B5" />
     <g clip-path="url(#bar-clip-light)">
-      <rect x="44.0" y="152" width="195.7" height="10" fill="#013AA7" />
-      <rect x="239.7" y="152" width="149.0" height="10" fill="#2563EB" />
-      <rect x="388.6" y="152" width="62.4" height="10" fill="#3B82F6" />
-      <rect x="451.1" y="152" width="42.8" height="10" fill="#60A5FA" />
-      <rect x="493.9" y="152" width="39.7" height="10" fill="#64748B" />
-      <rect x="533.6" y="152" width="46.4" height="10" fill="#94A3B8" />
+      <rect x="44.0" y="152" width="194.0" height="10" fill="#44578C" />
+      <rect x="238.0" y="152" width="147.7" height="10" fill="#657CAF" />
+      <rect x="385.8" y="152" width="61.9" height="10" fill="#879CC7" />
+      <rect x="447.7" y="152" width="46.9" height="10" fill="#A6B7D9" />
+      <rect x="494.6" y="152" width="39.3" height="10" fill="#7D6A58" />
+      <rect x="533.9" y="152" width="46.1" height="10" fill="#B8A28B" />
     </g>
 
     <!-- Language Legend -->
     
-      <rect x="44" y="177" width="9" height="9" rx="1.5" fill="#013AA7" />
-      <text x="59" y="186" class="sans" font-size="11.5" font-weight="500" fill="#334155">Jupyter Notebook 36.5%</text>
-      <rect x="226" y="177" width="9" height="9" rx="1.5" fill="#2563EB" />
-      <text x="241" y="186" class="sans" font-size="11.5" font-weight="500" fill="#334155">C# 27.8%</text>
-      <rect x="408" y="177" width="9" height="9" rx="1.5" fill="#3B82F6" />
-      <text x="423" y="186" class="sans" font-size="11.5" font-weight="500" fill="#334155">PHP 11.6%</text>
-      <rect x="44" y="205" width="9" height="9" rx="1.5" fill="#60A5FA" />
-      <text x="59" y="214" class="sans" font-size="11.5" font-weight="500" fill="#334155">JavaScript 8.0%</text>
-      <rect x="226" y="205" width="9" height="9" rx="1.5" fill="#64748B" />
-      <text x="241" y="214" class="sans" font-size="11.5" font-weight="500" fill="#334155">ShaderLab 7.4%</text>
-      <rect x="408" y="205" width="9" height="9" rx="1.5" fill="#94A3B8" />
-      <text x="423" y="214" class="sans" font-size="11.5" font-weight="500" fill="#334155">Other 8.7%</text>
+      <rect x="44" y="177" width="9" height="9" rx="1.5" fill="#44578C" />
+      <text x="59" y="186" class="sans" font-size="11.5" font-weight="400" fill="#4A5B82">Jupyter Notebook 36.2%</text>
+      <rect x="226" y="177" width="9" height="9" rx="1.5" fill="#657CAF" />
+      <text x="241" y="186" class="sans" font-size="11.5" font-weight="400" fill="#4A5B82">C# 27.6%</text>
+      <rect x="408" y="177" width="9" height="9" rx="1.5" fill="#879CC7" />
+      <text x="423" y="186" class="sans" font-size="11.5" font-weight="400" fill="#4A5B82">PHP 11.6%</text>
+      <rect x="44" y="205" width="9" height="9" rx="1.5" fill="#A6B7D9" />
+      <text x="59" y="214" class="sans" font-size="11.5" font-weight="400" fill="#4A5B82">JavaScript 8.7%</text>
+      <rect x="226" y="205" width="9" height="9" rx="1.5" fill="#7D6A58" />
+      <text x="241" y="214" class="sans" font-size="11.5" font-weight="400" fill="#4A5B82">ShaderLab 7.3%</text>
+      <rect x="408" y="205" width="9" height="9" rx="1.5" fill="#B8A28B" />
+      <text x="423" y="214" class="sans" font-size="11.5" font-weight="400" fill="#4A5B82">Other 8.6%</text>
 
     <!-- Panel Divider -->
-    <line x1="608" y1="28" x2="608" y2="236" stroke="#CBD8EC" stroke-width="1" />
+    <line x1="608" y1="28" x2="608" y2="236" stroke="#D4B898" stroke-width="1" />
 
     <!-- Right Panel: Recently Updated Repositories -->
-    <text x="634" y="44" class="sans" font-size="11" font-weight="700" fill="#334155" letter-spacing="0.5">RECENTLY UPDATED REPOSITORIES</text>
+    <text x="634" y="44" class="sans" font-size="11" font-weight="500" fill="#4A5B82" letter-spacing="0.5">RECENTLY UPDATED REPOSITORIES</text>
     
       <g class="row-1">
-        <rect x="634" y="66" width="522" height="44" rx="4" fill="#FFFFFF" stroke="#D4DFEE" />
-        <text x="650" y="92.5" class="sans" font-size="13.5" font-weight="700" fill="#001741">Proyek-Analisis-Data-Asah-by-Di...</text>
-        <rect x="944" y="77" width="106" height="22" rx="2" fill="#E8F0FE" />
-        <text x="997" y="91.5" class="sans" font-size="11" font-weight="600" fill="#013AA7" text-anchor="middle">Jupyter Notebook</text>
-        <text x="1140" y="92" class="sans" font-size="11.5" font-weight="500" fill="#334155" text-anchor="end">Nov 13, 2026</text>
+        <rect x="634" y="66" width="522" height="44" rx="6" fill="#FDF4E7" stroke="#DFC7AB" />
+        <text x="650" y="92.5" class="sans" font-size="13.5" font-weight="500" fill="#44578C">Proyek-Analisis-Data-Asah-by-Di...</text>
+        <rect x="944" y="77" width="106" height="22" rx="3" fill="#EFE0CD" />
+        <text x="997" y="91.5" class="sans" font-size="11" font-weight="500" fill="#44578C" text-anchor="middle">Jupyter Notebook</text>
+        <text x="1140" y="92" class="sans" font-size="11.5" font-weight="400" fill="#4A5B82" text-anchor="end">Nov 13, 2026</text>
       </g>
 
       <g class="row-2">
-        <rect x="634" y="118" width="522" height="44" rx="4" fill="#FFFFFF" stroke="#D4DFEE" />
-        <text x="650" y="144.5" class="sans" font-size="13.5" font-weight="700" fill="#001741">kanboard-komdat</text>
-        <rect x="944" y="129" width="106" height="22" rx="2" fill="#E8F0FE" />
-        <text x="997" y="143.5" class="sans" font-size="11" font-weight="600" fill="#013AA7" text-anchor="middle">Docs</text>
-        <text x="1140" y="144" class="sans" font-size="11.5" font-weight="500" fill="#334155" text-anchor="end">Oct 1, 2026</text>
+        <rect x="634" y="118" width="522" height="44" rx="6" fill="#FDF4E7" stroke="#DFC7AB" />
+        <text x="650" y="144.5" class="sans" font-size="13.5" font-weight="500" fill="#44578C">kanboard-komdat</text>
+        <rect x="944" y="129" width="106" height="22" rx="3" fill="#EFE0CD" />
+        <text x="997" y="143.5" class="sans" font-size="11" font-weight="500" fill="#44578C" text-anchor="middle">Docs</text>
+        <text x="1140" y="144" class="sans" font-size="11.5" font-weight="400" fill="#4A5B82" text-anchor="end">Oct 1, 2026</text>
       </g>
 
       <g class="row-3">
-        <rect x="634" y="170" width="522" height="44" rx="4" fill="#FFFFFF" stroke="#D4DFEE" />
-        <text x="650" y="196.5" class="sans" font-size="13.5" font-weight="700" fill="#001741">Ular-Tangga-IPB</text>
-        <rect x="944" y="181" width="106" height="22" rx="2" fill="#E8F0FE" />
-        <text x="997" y="195.5" class="sans" font-size="11" font-weight="600" fill="#013AA7" text-anchor="middle">C#</text>
-        <text x="1140" y="196" class="sans" font-size="11.5" font-weight="500" fill="#334155" text-anchor="end">Jul 1, 2026</text>
+        <rect x="634" y="170" width="522" height="44" rx="6" fill="#FDF4E7" stroke="#DFC7AB" />
+        <text x="650" y="196.5" class="sans" font-size="13.5" font-weight="500" fill="#44578C">Ular-Tangga-IPB</text>
+        <rect x="944" y="181" width="106" height="22" rx="3" fill="#EFE0CD" />
+        <text x="997" y="195.5" class="sans" font-size="11" font-weight="500" fill="#44578C" text-anchor="middle">C#</text>
+        <text x="1140" y="196" class="sans" font-size="11.5" font-weight="400" fill="#4A5B82" text-anchor="end">Jul 1, 2026</text>
       </g>
 
-    <text x="1156" y="242" class="sans" font-size="11" font-weight="500" fill="#334155" text-anchor="end">Auto-synced via GitHub Actions · 2026-11-23 UTC</text>
+    <text x="1156" y="242" class="sans" font-size="11" font-weight="400" fill="#4A5B82" text-anchor="end">Auto-synced via GitHub Actions · 2026-11-24 UTC</text>
   </g>
 </svg>
