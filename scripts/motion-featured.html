@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Featured Project - Agrisymphony 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg-base: #FAE2C6;
+      --bg-warm: #F2C99A;
+      --bg-light: #FDF4E7;
+      --display: #657CAF;
+      --ink: #44578C;
+      --ink-soft: #4A5B82;
+      --border: #D4B898;
+      --card-bg: #FDF4E7;
+      --card-border: rgba(101, 124, 175, 0.36);
+      --stamp-bg: #44578C;
+      --stamp-text: #FAE2C6;
+      --chip-bg: #EFE0CD;
+      --chip-border: rgba(101, 124, 175, 0.45);
+      --pill-border: rgba(101, 124, 175, 0.8);
+      --pill-fill: #44578C;
+      --pill-active-text: #FAE2C6;
+      --pill-shadow: rgba(68, 87, 140, 0.28);
+      --accent-soft: rgba(101, 124, 175, 0.14);
+    }
+
+    body[data-theme="dark"] {
+      --bg-base: #161C2B;
+      --bg-warm: #222D49;
+      --bg-light: #121724;
+      --display: #FAE2C6;
+      --ink: #C8D3EC;
+      --ink-soft: #9BB3E8;
+      --border: #2F3C59;
+      --card-bg: #1D2538;
+      --card-border: rgba(155, 179, 232, 0.32);
+      --stamp-bg: #FAE2C6;
+      --stamp-text: #161C2B;
+      --chip-bg: #25304A;
+      --chip-border: rgba(155, 179, 232, 0.35);
+      --pill-border: rgba(155, 179, 232, 0.85);
+      --pill-fill: #FAE2C6;
+      --pill-active-text: #161C2B;
+      --pill-shadow: rgba(0, 0, 0, 0.45);
+      --accent-soft: rgba(250, 226, 198, 0.10);
+    }
+
+    html, body {
+      width: 1100px;
+      height: 400px;
+      overflow: hidden;
+      background: transparent;
+      font-family: 'Outfit', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .stage {
+      position: relative;
+      width: 1100px;
+      height: 400px;
+      border-radius: 14px;
+      overflow: hidden;
+      background: linear-gradient(125deg, var(--bg-warm) 0%, var(--bg-base) 55%, var(--bg-light) 100%);
+      border: 1px solid var(--border);
+    }
+
+    .pool {
+      position: absolute;
+      border-radius: 999px;
+      pointer-events: none;
+      background: radial-gradient(circle, var(--accent-soft) 0%, transparent 70%);
+    }
+    .pool-a { width: 520px; height: 340px; left: -100px; bottom: -120px; }
+    .pool-b { width: 420px; height: 300px; right: -80px; top: -100px; }
+
+    #world {
+      position: relative;
+      width: 1100px;
+      height: 400px;
+    }
+
+    /* Left Browser Showcase Frame */
+    .browser-frame {
+      position: absolute;
+      left: 28px;
+      top: 28px;
+      width: 596px;
+      height: 344px;
+      border-radius: 12px;
+      background: var(--card-bg);
+      border: 1.2px solid var(--card-border);
+      box-shadow: 0 20px 44px rgba(22, 28, 43, 0.14);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .browser-bar {
+      height: 36px;
+      padding: 0 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--card-border);
+      background: var(--card-bg);
+      flex-shrink: 0;
+    }
+
+    .url-pill {
+      font-size: 11.5px;
+      font-weight: 500;
+      color: var(--ink);
+      letter-spacing: 0.3px;
+    }
+
+    .view-indicator {
+      position: relative;
+      height: 20px;
+      width: 116px;
+      overflow: hidden;
+    }
+    .view-tag {
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 10.5px;
+      font-weight: 500;
+      color: var(--ink-soft);
+      background: var(--chip-bg);
+      padding: 2px 8px;
+      border-radius: 3px;
+      white-space: nowrap;
+    }
+
+    .viewport {
+      position: relative;
+      flex: 1;
+      overflow: hidden;
+      background: #0d0b5e;
+    }
+
+    .scroll-stack {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      will-change: transform;
+    }
+
+    .shot-pane {
+      width: 594px;
+      height: 307px;
+      overflow: hidden;
+      position: relative;
+    }
+    .shot-pane img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+      will-change: transform;
+    }
+
+    /* Right Editorial Column */
+    .info-col {
+      position: absolute;
+      left: 656px;
+      top: 34px;
+      width: 414px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .stamp {
+      display: inline-block;
+      background: var(--stamp-bg);
+      color: var(--stamp-text);
+      font-size: 10.5px;
+      font-weight: 500;
+      letter-spacing: 0.7px;
+      padding: 4px 10px;
+    }
+
+    .proj-title {
+      margin-top: 14px;
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 42px;
+      line-height: 1.04;
+      font-weight: 400;
+      color: var(--display);
+    }
+
+    .proj-meta {
+      margin-top: 8px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--ink-soft);
+    }
+
+    .proj-desc {
+      margin-top: 14px;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.52;
+      color: var(--ink);
+    }
+
+    .chips {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .chip {
+      font-size: 11.5px;
+      font-weight: 400;
+      color: var(--ink);
+      background: var(--chip-bg);
+      border: 1px solid var(--chip-border);
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+
+    /* Signature Animated PestGuard CTA Pill */
+    .cta-pill {
+      margin-top: 22px;
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 36px;
+      padding: 0 22px;
+      border-radius: 999px;
+      border: 1.2px solid var(--pill-border);
+      font-size: 13.5px;
+      font-weight: 400;
+      overflow: hidden;
+      will-change: transform, box-shadow;
+    }
+    .cta-fill {
+      position: absolute;
+      inset: 0;
+      border-radius: 999px;
+      background: var(--pill-fill);
+      transform-origin: left center;
+      transform: scaleX(0);
+    }
+    .cta-label-wrap {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      height: 19px;
+      line-height: 19px;
+    }
+    .cta-top { display: block; color: var(--ink); }
+    .cta-bot { position: absolute; inset: 0; display: block; color: var(--pill-active-text); transform: translateY(100%); }
+  </style>
+</head>
+<body data-theme="light">
+  <div class="stage">
+    <div class="pool pool-a" id="poolA"></div>
+    <div class="pool pool-b" id="poolB"></div>
+
+    <div id="world">
+      <div class="browser-frame" id="browserFrame">
+        <div class="browser-bar">
+          <div class="url-pill">agrisymphony.com</div>
+          <div class="view-indicator">
+            <div class="view-tag" id="vTag1">01 / Hero</div>
+            <div class="view-tag" id="vTag2" style="opacity:0; transform: translateY(12px);">02 / AGSN Moment</div>
+          </div>
+        </div>
+        <div class="viewport">
+          <div class="scroll-stack" id="scrollStack">
+            <div class="shot-pane"><img id="imgHero" alt="Agrisymphony 2026 Hero"></div>
+            <div class="shot-pane"><img id="imgMoment" alt="Agrisymphony AGSN Moment Gallery"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-col">
+        <div class="stamp">FLAGSHIP CASE &#183; OMB IPB 63</div>
+        <h2 class="proj-title">Agrisymphony 2026</h2>
+        <div class="proj-meta">UI/UX Designer &#183; Mar 2026 - Aug 2026</div>
+        <p class="proj-desc">
+          IPB University's annual festival and student orientation web platform, structuring About, Schedule, Gallery, Emergency, and Store into clear, responsive flows.
+        </p>
+        <div class="chips">
+          <span class="chip" id="chip0">Information Architecture</span>
+          <span class="chip" id="chip1">User Flows</span>
+          <span class="chip" id="chip2">Responsive UI</span>
+        </div>
+        <div class="cta-pill" id="ctaPill">
+          <span class="cta-fill" id="ctaFill"></span>
+          <span class="cta-label-wrap">
+            <span class="cta-top" id="ctaTop">Visit agrisymphony.com</span>
+            <span class="cta-bot" id="ctaBot" aria-hidden="true">Visit agrisymphony.com</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const theme = params.get('theme') === 'dark' ? 'dark' : 'light';
+      document.body.setAttribute('data-theme', theme);
+
+      const assetsBase = params.get('assets') || '../assets';
+      document.getElementById('imgHero').src = `${assetsBase}/agrisymphony-hero.png`;
+      document.getElementById('imgMoment').src = `${assetsBase}/agrisymphony-moment.png`;
+
+      const DURATION = 6.4;
+      window.__DURATION = DURATION;
+
+      const scrollStack = document.getElementById('scrollStack');
+      const imgHero = document.getElementById('imgHero');
+      const imgMoment = document.getElementById('imgMoment');
+      const poolA = document.getElementById('poolA');
+      const poolB = document.getElementById('poolB');
+
+      const shadowVal = theme === 'dark'
+        ? '0 10px 24px rgba(0, 0, 0, 0.45)'
+        : '0 10px 22px rgba(68, 87, 140, 0.28)';
+
+      const tl = gsap.timeline({ paused: true });
+
+      // Hero subtle calm depth zoom (0.0 -> 2.4s)
+      tl.to(imgHero, { scale: 1.035, duration: 2.3, ease: 'sine.inOut' }, 0.0);
+
+      // Vertical live-site scroll glide to AGSN Moment (2.4s -> 3.25s)
+      tl.to(scrollStack, { y: -307, duration: 0.85, ease: 'power3.inOut' }, 2.40);
+      tl.to('#vTag1', { opacity: 0, y: -12, duration: 0.30, ease: 'power2.in' }, 2.45);
+      tl.to('#vTag2', { opacity: 1, y: 0, duration: 0.38, ease: 'power3.out' }, 2.68);
+      tl.to(imgHero, { scale: 1.0, duration: 0.45, ease: 'power2.out' }, 3.10);
+
+      // CTA Pill signature sweep while viewing AGSN Moment (2.75s -> 5.2s)
+      tl.to('#ctaPill', { y: -3, boxShadow: shadowVal, duration: 0.48, ease: 'power3.out' }, 2.75);
+      tl.to('#ctaFill', { scaleX: 1, duration: 0.50, ease: 'power3.out' }, 2.75);
+      tl.to('#ctaTop', { yPercent: -100, duration: 0.50, ease: 'power3.out' }, 2.75);
+      tl.to('#ctaBot', { yPercent: -100, duration: 0.50, ease: 'power3.out' }, 2.75);
+
+      // AGSN Moment gentle breath (3.25s -> 5.3s)
+      tl.to(imgMoment, { scale: 1.035, duration: 1.9, ease: 'sine.inOut' }, 3.30);
+
+      // Scroll smoothly back to exact Frame-0 Hero (5.35s -> 6.30s)
+      tl.to(scrollStack, { y: 0, duration: 0.85, ease: 'power3.inOut' }, 5.35);
+      tl.to('#vTag2', { opacity: 0, y: 12, duration: 0.30, ease: 'power2.in' }, 5.38);
+      tl.to('#vTag1', { opacity: 1, y: 0, duration: 0.38, ease: 'power3.out' }, 5.62);
+      tl.to(imgMoment, { scale: 1.0, duration: 0.40, ease: 'power2.out' }, 5.95);
+
+      // CTA Pill smooth release before loop end
+      tl.to('#ctaPill', { y: 0, boxShadow: '0 0 0 rgba(0,0,0,0)', duration: 0.45, ease: 'power3.inOut' }, 5.40);
+      tl.to('#ctaFill', { scaleX: 0, duration: 0.45, ease: 'power3.inOut' }, 5.40);
+      tl.to('#ctaTop', { yPercent: 0, duration: 0.45, ease: 'power3.inOut' }, 5.40);
+      tl.to('#ctaBot', { yPercent: 0, duration: 0.45, ease: 'power3.inOut' }, 5.40);
+
+      window.__setMotionTime = function (t) {
+        const clamped = ((t % DURATION) + DURATION) % DURATION;
+        tl.time(clamped);
+        const phase = (2 * Math.PI * clamped) / DURATION;
+        poolA.style.transform = `translate3d(${(Math.sin(phase) * 20).toFixed(2)}px, ${(Math.cos(phase) * 14).toFixed(2)}px, 0)`;
+        poolB.style.transform = `translate3d(${(Math.cos(phase) * -18).toFixed(2)}px, ${(Math.sin(phase) * 12).toFixed(2)}px, 0)`;
+      };
+
+      window.__setMotionTime(0);
+
+      if (params.get('clean') !== '1') {
+        let startTs = null;
+        function tick(now) {
+          if (startTs === null) startTs = now;
+          window.__setMotionTime((now - startTs) / 1000);
+          requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+      }
+    })();
+  </script>
+</body>
+</html>

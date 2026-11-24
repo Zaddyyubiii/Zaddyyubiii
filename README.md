@@ -34,27 +34,17 @@
 
 ## Featured Project
 
-<table>
-  <tr>
-    <td width="58%" valign="middle">
-      <a href="https://agrisymphony.com/">
-        <img src="./assets/agrisymphony-preview.png" alt="Agrisymphony 2026 live website preview" width="100%">
-      </a>
-    </td>
-    <td width="42%" valign="top">
-      <img src="https://img.shields.io/badge/FLAGSHIP_CASE-OMB_IPB_63-44578C?style=flat" alt="Flagship Case OMB IPB 63">
-      <h3><a href="https://agrisymphony.com/">Agrisymphony 2026</a></h3>
-      <p><strong>UI/UX Designer</strong> | Mar 2026 - Aug 2026</p>
-      <p>
-        Designed the user interface and experience for IPB University's annual festival and student orientation platform, structuring event navigation (About, Schedule, Gallery, Emergency, and Store) into clear, responsive web flows.
-      </p>
-      <p><sub>Information Architecture · User Flows · Responsive UI</sub></p>
-      <a href="https://agrisymphony.com/">
-        <img src="https://img.shields.io/badge/Visit_Live_Site-agrisymphony.com-44578C?style=flat&logo=googlechrome&logoColor=white" alt="Visit agrisymphony.com">
-      </a>
-    </td>
-  </tr>
-</table>
+<a href="https://agrisymphony.com/">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/featured-agrisymphony-dark.webp">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/featured-agrisymphony-light.webp">
+    <img alt="Agrisymphony 2026 - Animated Featured Project Showcase" src="./assets/featured-agrisymphony-light.webp" width="100%">
+  </picture>
+</a>
+
+<p align="center">
+  <sub><strong>Live Website:</strong> <a href="https://agrisymphony.com/">agrisymphony.com</a> · <strong>Role:</strong> UI/UX Designer (OMB IPB 63, Mar - Aug 2026)</sub>
+</p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/dividers/wave-dark.svg">
@@ -64,21 +54,54 @@
 
 ## Selected Work
 
-### Product & UI/UX
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/selected-work-dark.webp">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/selected-work-light.webp">
+  <img alt="Selected Work Animated Reel - TaniPlus, StudentOrientation IPB, and Ular Tangga IPB" src="./assets/selected-work-light.webp" width="100%">
+</picture>
 
-| Project | Context | Contribution |
-| --- | --- | --- |
-| [**TaniPlus**](https://devpost.com/software/taniplus) | Garuda Hacks 7.0 (Jul - Aug 2026) | Designed UI/UX, user flows, and wireframes for an IoT precision agriculture platform turning sensor and soil metrics into clear farmer actions. |
-| **MySOC & StudentOrientation** | OMB IPB 63 (Jan - Jul 2026) | Built interface components, user flows, and wireframes to organize orientation schedules and campus services for new IPB University students. |
-| **IPB Preloved** | Campus Marketplace (Jan - Jun 2026) | Designed browsing, search, and product discovery flows for a student second-hand marketplace. |
-| **OrmawaEksekutif.com & Sakarsakos.com** | Ormawa Eksekutif PKU IPB (Dec 2024 - Aug 2025) | Created website layouts, visual assets, and UI components for student organization profiling and student housing discovery. |
-
-### Code Repositories
-
-- [`Proyek-Analisis-Data-Asah-by-Dicoding-`](https://github.com/Zaddyyubiii/Proyek-Analisis-Data-Asah-by-Dicoding-) (Jupyter Notebook, Python): Data analysis project built for Asah by Dicoding.
-- [`Ular-Tangga-IPB`](https://github.com/Zaddyyubiii/Ular-Tangga-IPB) (C#, WebGL, [Live Demo](https://zaddyyubiii.github.io/Ular-Tangga-IPB/)): Interactive campus-themed board game deployed on GitHub Pages.
-- [`Project-Akhir-Metkuan`](https://github.com/Zaddyyubiii/Project-Akhir-Metkuan) (R): Quantitative methods final analysis repository.
-- [`rumah_sakit_crud`](https://github.com/Zaddyyubiii/rumah_sakit_crud) (PHP): Hospital records CRUD web application.
+<table>
+  <tr>
+    <td valign="top" width="52%">
+      <h4>Product &amp; UI/UX</h4>
+      <p>
+        <a href="https://devpost.com/software/taniplus"><strong>TaniPlus</strong></a> (Garuda Hacks 7.0, Jul - Aug 2026)<br>
+        <sub>UI/UX design, user flows, and wireframes for an IoT precision agriculture platform.</sub>
+      </p>
+      <p>
+        <a href="https://studentorientation.ipb.ac.id"><strong>StudentOrientation IPB</strong></a> &amp; <strong>MySOC</strong> (OMB IPB 63, Jan - Jul 2026)<br>
+        <sub>Interface components, user flows, and wireframes for IPB University orientation portals.</sub>
+      </p>
+      <p>
+        <strong>IPB Preloved</strong> (Campus Marketplace, Jan - Jun 2026)<br>
+        <sub>Browsing, search, and product discovery flows for a student second-hand marketplace.</sub>
+      </p>
+      <p>
+        <strong>OrmawaEksekutif.com &amp; Sakarsakos.com</strong> (Dec 2024 - Aug 2025)<br>
+        <sub>Website layouts, visual assets, and UI components for student organization and housing platforms.</sub>
+      </p>
+    </td>
+    <td valign="top" width="48%">
+      <h4>Code Repositories</h4>
+      <p>
+        <a href="https://github.com/Zaddyyubiii/Proyek-Analisis-Data-Asah-by-Dicoding-"><code>Proyek-Analisis-Data-Asah-by-Dicoding-</code></a> (Jupyter, Python)<br>
+        <sub>Data analysis project built for Asah by Dicoding.</sub>
+      </p>
+      <p>
+        <a href="https://github.com/Zaddyyubiii/Ular-Tangga-IPB"><code>Ular-Tangga-IPB</code></a> (C#, WebGL · <a href="https://zaddyyubiii.github.io/Ular-Tangga-IPB/">Live Demo</a>)<br>
+        <sub>Interactive campus-themed board game deployed on GitHub Pages.</sub>
+      </p>
+      <p>
+        <a href="https://github.com/Zaddyyubiii/Project-Akhir-Metkuan"><code>Project-Akhir-Metkuan</code></a> (R)<br>
+        <sub>Quantitative methods final analysis repository.</sub>
+      </p>
+      <p>
+        <a href="https://github.com/Zaddyyubiii/rumah_sakit_crud"><code>rumah_sakit_crud</code></a> (PHP)<br>
+        <sub>Hospital records CRUD web application.</sub>
+      </p>
+    </td>
+  </tr>
+</table>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/dividers/rule-dark.svg">

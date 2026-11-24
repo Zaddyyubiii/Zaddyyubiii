@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selected Work - Ayubi Fathan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg-base: #FAE2C6;
+      --bg-warm: #F2C99A;
+      --bg-light: #FDF4E7;
+      --display: #657CAF;
+      --ink: #44578C;
+      --ink-soft: #4A5B82;
+      --border: #D4B898;
+      --card-bg: #FDF4E7;
+      --card-active: #FFFFFF;
+      --card-border: rgba(101, 124, 175, 0.34);
+      --stamp-bg: #44578C;
+      --stamp-text: #FAE2C6;
+      --accent: #44578C;
+      --track-bg: rgba(101, 124, 175, 0.22);
+      --chip-bg: #EFE0CD;
+      --accent-soft: rgba(101, 124, 175, 0.14);
+    }
+
+    body[data-theme="dark"] {
+      --bg-base: #161C2B;
+      --bg-warm: #222D49;
+      --bg-light: #121724;
+      --display: #FAE2C6;
+      --ink: #C8D3EC;
+      --ink-soft: #9BB3E8;
+      --border: #2F3C59;
+      --card-bg: #1D2538;
+      --card-active: #25304A;
+      --card-border: rgba(155, 179, 232, 0.30);
+      --stamp-bg: #FAE2C6;
+      --stamp-text: #161C2B;
+      --accent: #FAE2C6;
+      --track-bg: rgba(155, 179, 232, 0.22);
+      --chip-bg: #25304A;
+      --accent-soft: rgba(250, 226, 198, 0.10);
+    }
+
+    html, body {
+      width: 1100px;
+      height: 410px;
+      overflow: hidden;
+      background: transparent;
+      font-family: 'Outfit', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .stage {
+      position: relative;
+      width: 1100px;
+      height: 410px;
+      border-radius: 14px;
+      overflow: hidden;
+      background: linear-gradient(128deg, var(--bg-warm) 0%, var(--bg-base) 54%, var(--bg-light) 100%);
+      border: 1px solid var(--border);
+    }
+
+    .pool {
+      position: absolute;
+      border-radius: 999px;
+      pointer-events: none;
+      background: radial-gradient(circle, var(--accent-soft) 0%, transparent 72%);
+    }
+    .pool-a { width: 460px; height: 320px; right: -90px; bottom: -110px; }
+
+    /* Left Index Rail */
+    .rail {
+      position: absolute;
+      left: 30px;
+      top: 30px;
+      width: 326px;
+      height: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .rail-stamp {
+      display: inline-block;
+      align-self: flex-start;
+      background: var(--stamp-bg);
+      color: var(--stamp-text);
+      font-size: 10.5px;
+      font-weight: 500;
+      letter-spacing: 0.7px;
+      padding: 4px 10px;
+    }
+
+    .rail-heading {
+      margin-top: 10px;
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 31px;
+      line-height: 1.05;
+      font-weight: 400;
+      color: var(--display);
+    }
+
+    .rail-items {
+      margin-top: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex: 1;
+      justify-content: center;
+    }
+
+    .rail-item {
+      position: relative;
+      border-radius: 8px;
+      padding: 12px 14px 12px 18px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      overflow: hidden;
+      will-change: transform, opacity;
+    }
+
+    .rail-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 3.5px;
+      background: var(--accent);
+      transform-origin: top center;
+      transform: scaleY(0);
+    }
+
+    .rail-item-top {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+    .rail-num {
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--ink-soft);
+      letter-spacing: 0.6px;
+    }
+    .rail-name {
+      font-size: 14.5px;
+      font-weight: 500;
+      color: var(--ink);
+    }
+    .rail-sub {
+      margin-top: 3px;
+      font-size: 11.5px;
+      font-weight: 300;
+      color: var(--ink-soft);
+    }
+
+    .progress-track {
+      margin-top: 12px;
+      height: 3px;
+      width: 100%;
+      border-radius: 2px;
+      background: var(--track-bg);
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      width: 100%;
+      background: var(--accent);
+      transform-origin: left center;
+      transform: scaleX(0);
+    }
+
+    /* Right Framed Product Stage */
+    .preview-stage {
+      position: absolute;
+      left: 384px;
+      top: 30px;
+      width: 686px;
+      height: 350px;
+      border-radius: 12px;
+      background: var(--card-bg);
+      border: 1.2px solid var(--card-border);
+      box-shadow: 0 20px 44px rgba(22, 28, 43, 0.12);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .shot-viewport {
+      position: relative;
+      height: 252px;
+      width: 100%;
+      overflow: hidden;
+      border-bottom: 1px solid var(--card-border);
+      background: var(--bg-light);
+    }
+
+    .slide-shot {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+    }
+    .slide-shot img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+      will-change: transform;
+    }
+    #img0 { object-position: center 50%; }
+    #img2 { object-position: center 26%; }
+
+    .caption-area {
+      position: relative;
+      flex: 1;
+      padding: 14px 20px;
+      overflow: hidden;
+    }
+
+    .slide-caption {
+      position: absolute;
+      inset: 14px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .cap-row-top {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .cap-title {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 25px;
+      line-height: 1.05;
+      font-weight: 400;
+      color: var(--display);
+    }
+    .cap-tags {
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--ink-soft);
+      background: var(--chip-bg);
+      padding: 3px 9px;
+      border-radius: 3px;
+      white-space: nowrap;
+    }
+    .cap-desc {
+      font-size: 13px;
+      font-weight: 300;
+      color: var(--ink);
+      line-height: 1.38;
+    }
+  </style>
+</head>
+<body data-theme="light">
+  <div class="stage">
+    <div class="pool pool-a" id="poolA"></div>
+
+    <!-- Left Editorial Index Rail -->
+    <div class="rail">
+      <div>
+        <div class="rail-stamp">SELECTED WORK &#183; 03 PREVIEWS</div>
+        <h2 class="rail-heading">Product &amp; Code Highlights</h2>
+      </div>
+
+      <div class="rail-items">
+        <div class="rail-item" id="item0">
+          <div class="rail-bar" id="bar0"></div>
+          <div class="rail-item-top">
+            <span class="rail-name">TaniPlus</span>
+            <span class="rail-num">01</span>
+          </div>
+          <div class="rail-sub">Garuda Hacks 7.0 &#183; UI/UX Design</div>
+        </div>
+
+        <div class="rail-item" id="item1">
+          <div class="rail-bar" id="bar1"></div>
+          <div class="rail-item-top">
+            <span class="rail-name">StudentOrientation IPB</span>
+            <span class="rail-num">02</span>
+          </div>
+          <div class="rail-sub">OMB IPB 63 &#183; Orientation Portal</div>
+        </div>
+
+        <div class="rail-item" id="item2">
+          <div class="rail-bar" id="bar2"></div>
+          <div class="rail-item-top">
+            <span class="rail-name">Ular Tangga IPB</span>
+            <span class="rail-num">03</span>
+          </div>
+          <div class="rail-sub">WebGL Game &#183; C# &amp; GitHub Pages</div>
+        </div>
+      </div>
+
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+    </div>
+
+    <!-- Right Framed Real Product Stage -->
+    <div class="preview-stage">
+      <div class="shot-viewport">
+        <div class="slide-shot" id="shot0">
+          <img id="img0" alt="TaniPlus Devpost Banner">
+        </div>
+        <div class="slide-shot" id="shot1" style="opacity:0;">
+          <img id="img1" alt="StudentOrientation IPB Homepage">
+        </div>
+        <div class="slide-shot" id="shot2" style="opacity:0;">
+          <img id="img2" alt="Ular Tangga IPB WebGL Game">
+        </div>
+      </div>
+
+      <div class="caption-area">
+        <div class="slide-caption" id="cap0">
+          <div class="cap-row-top">
+            <span class="cap-title">TaniPlus</span>
+            <span class="cap-tags">Figma &#183; React &#183; Redis &#183; Vercel</span>
+          </div>
+          <div class="cap-desc">Agricultural nutrient and irrigation intelligence helping farmers monitor soil health and El Nino risks.</div>
+        </div>
+
+        <div class="slide-caption" id="cap1" style="opacity:0;">
+          <div class="cap-row-top">
+            <span class="cap-title">StudentOrientation IPB</span>
+            <span class="cap-tags">UX Flows &#183; Wireframes &#183; Responsive UI</span>
+          </div>
+          <div class="cap-desc">Official OMB IPB 63 portal organizing orientation timelines, campus articles, FAQ, and student guides.</div>
+        </div>
+
+        <div class="slide-caption" id="cap2" style="opacity:0;">
+          <div class="cap-row-top">
+            <span class="cap-title">Ular Tangga IPB</span>
+            <span class="cap-tags">C# &#183; WebGL &#183; JavaScript</span>
+          </div>
+          <div class="cap-desc">Interactive campus-themed board game built in C# and deployed live for browser play on GitHub Pages.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const theme = params.get('theme') === 'dark' ? 'dark' : 'light';
+      document.body.setAttribute('data-theme', theme);
+
+      const assetsBase = params.get('assets') || '../assets';
+      document.getElementById('img0').src = `${assetsBase}/taniplus-banner.png`;
+      document.getElementById('img1').src = `${assetsBase}/studentorientation-hero.png`;
+      document.getElementById('img2').src = `${assetsBase}/ular-tangga-ipb.png`;
+
+      const DURATION = 8.4;
+      window.__DURATION = DURATION;
+
+      const poolA = document.getElementById('poolA');
+      const progressFill = document.getElementById('progressFill');
+      const tl = gsap.timeline({ paused: true });
+
+      // Initial resting state at t = 0: Item 0 active
+      gsap.set('#item0', { x: 4, opacity: 1 });
+      gsap.set('#bar0', { scaleY: 1 });
+      gsap.set('#item1, #item2', { x: 0, opacity: 0.62 });
+      gsap.set('#bar1, #bar2', { scaleY: 0 });
+      gsap.set('#img0', { scale: 1.0 });
+
+      // Hold 01 (0.0 -> 2.4s): subtle breath on TaniPlus
+      tl.to('#img0', { scale: 1.04, duration: 2.35, ease: 'sine.inOut' }, 0.0);
+
+      // Transition 01 -> 02 (2.40s -> 3.05s)
+      tl.to('#item0', { x: 0, opacity: 0.62, duration: 0.45, ease: 'power3.inOut' }, 2.40);
+      tl.to('#bar0', { scaleY: 0, duration: 0.40, ease: 'power3.inOut' }, 2.40);
+      tl.to('#item1', { x: 4, opacity: 1, duration: 0.48, ease: 'power3.out' }, 2.50);
+      tl.to('#bar1', { scaleY: 1, duration: 0.48, ease: 'power3.out' }, 2.50);
+
+      tl.to('#shot0', { opacity: 0, y: -18, duration: 0.42, ease: 'power2.in' }, 2.40);
+      tl.fromTo('#shot1', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.54, ease: 'power3.out', immediateRender: false }, 2.56);
+      tl.to('#cap0', { opacity: 0, y: -10, duration: 0.34, ease: 'power2.in' }, 2.40);
+      tl.fromTo('#cap1', { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.46, ease: 'power3.out', immediateRender: false }, 2.58);
+      tl.to('#img0', { scale: 1.0, duration: 0.2 }, 2.90);
+
+      // Hold 02 (3.0 -> 5.2s): subtle breath on StudentOrientation
+      tl.to('#img1', { scale: 1.04, duration: 2.2, ease: 'sine.inOut' }, 3.00);
+
+      // Transition 02 -> 03 (5.20s -> 5.85s)
+      tl.to('#item1', { x: 0, opacity: 0.62, duration: 0.45, ease: 'power3.inOut' }, 5.20);
+      tl.to('#bar1', { scaleY: 0, duration: 0.40, ease: 'power3.inOut' }, 5.20);
+      tl.to('#item2', { x: 4, opacity: 1, duration: 0.48, ease: 'power3.out' }, 5.30);
+      tl.to('#bar2', { scaleY: 1, duration: 0.48, ease: 'power3.out' }, 5.30);
+
+      tl.to('#shot1', { opacity: 0, y: -18, duration: 0.42, ease: 'power2.in' }, 5.20);
+      tl.fromTo('#shot2', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.54, ease: 'power3.out', immediateRender: false }, 5.36);
+      tl.to('#cap1', { opacity: 0, y: -10, duration: 0.34, ease: 'power2.in' }, 5.20);
+      tl.fromTo('#cap2', { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.46, ease: 'power3.out', immediateRender: false }, 5.38);
+      tl.to('#img1', { scale: 1.0, duration: 0.2 }, 5.70);
+
+      // Hold 03 (5.8 -> 7.75s): subtle breath on Ular Tangga IPB
+      tl.to('#img2', { scale: 1.04, duration: 1.9, ease: 'sine.inOut' }, 5.80);
+
+      // Transition 03 -> 01 seamless reset (7.75s -> 8.35s)
+      tl.to('#item2', { x: 0, opacity: 0.62, duration: 0.42, ease: 'power3.inOut' }, 7.75);
+      tl.to('#bar2', { scaleY: 0, duration: 0.38, ease: 'power3.inOut' }, 7.75);
+      tl.to('#item0', { x: 4, opacity: 1, duration: 0.46, ease: 'power3.out' }, 7.86);
+      tl.to('#bar0', { scaleY: 1, duration: 0.46, ease: 'power3.out' }, 7.86);
+
+      tl.to('#shot2', { opacity: 0, y: -18, duration: 0.38, ease: 'power2.in' }, 7.75);
+      tl.fromTo('#shot0', { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.50, ease: 'power3.out', immediateRender: false }, 7.88);
+      tl.to('#cap2', { opacity: 0, y: -10, duration: 0.32, ease: 'power2.in' }, 7.75);
+      tl.fromTo('#cap0', { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.44, ease: 'power3.out', immediateRender: false }, 7.90);
+      tl.to('#img2', { scale: 1.0, duration: 0.2 }, 8.15);
+
+      window.__setMotionTime = function (t) {
+        const clamped = ((t % DURATION) + DURATION) % DURATION;
+        tl.time(clamped);
+        const phase = (2 * Math.PI * clamped) / DURATION;
+        poolA.style.transform = `translate3d(${(Math.sin(phase) * 20).toFixed(2)}px, ${(Math.cos(phase) * 14).toFixed(2)}px, 0)`;
+        // Progress fill tracks 0 -> 1 over the full 8.4s cycle smoothly
+        progressFill.style.transform = `scaleX(${(clamped / DURATION).toFixed(4)})`;
+      };
+
+      window.__setMotionTime(0);
+
+      if (params.get('clean') !== '1') {
+        let startTs = null;
+        function tick(now) {
+          if (startTs === null) startTs = now;
+          window.__setMotionTime((now - startTs) / 1000);
+          requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+      }
+    })();
+  </script>
+</body>
+</html>
