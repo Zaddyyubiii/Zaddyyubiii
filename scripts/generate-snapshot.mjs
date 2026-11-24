@@ -154,7 +154,8 @@ function renderSnapshotSvg({
     return `
       <g class="row-${idx + 1}">
         <rect x="634" y="${y}" width="522" height="44" rx="6" fill="${palette.cardBg}" stroke="${palette.cardBorder}" />
-        <text x="650" y="${y + 26.5}" class="sans" font-size="13.5" font-weight="500" fill="${palette.textPrimary}">${repoName}</text>
+        <rect x="634" y="${y + 8}" width="3" height="28" rx="1.5" fill="${palette.accentText}" class="accent-cycle-${idx + 1}" />
+        <text x="652" y="${y + 26.5}" class="sans" font-size="13.5" font-weight="500" fill="${palette.textPrimary}">${repoName}</text>
         <rect x="944" y="${y + 11}" width="106" height="22" rx="3" fill="${palette.langTagBg}" />
         <text x="997" y="${y + 25.5}" class="sans" font-size="11" font-weight="500" fill="${palette.langTagText}" text-anchor="middle">${langLabel}</text>
         <text x="1140" y="${y + 26}" class="sans" font-size="11.5" font-weight="400" fill="${palette.textSecondary}" text-anchor="end">${pushedLabel}</text>
@@ -171,6 +172,11 @@ function renderSnapshotSvg({
     <clipPath id="bar-clip-${theme}">
       <rect x="44" y="152" width="${barWidth}" height="10" rx="5" />
     </clipPath>
+    <linearGradient id="bar-sheen-${theme}" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.32" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </linearGradient>
     <style>
       .serif {
         font-family: 'Instrument Serif', Georgia, 'Times New Roman', serif;
@@ -182,9 +188,26 @@ function renderSnapshotSvg({
         0% { opacity: 0.92; transform: translateX(6px); }
         100% { opacity: 1; transform: translateX(0); }
       }
+      @keyframes barSheen {
+        0% { transform: translateX(-140px); }
+        100% { transform: translateX(680px); }
+      }
+      @keyframes cycleHighlight {
+        0%, 26%, 100% { opacity: 0.18; }
+        8%, 18% { opacity: 1; }
+      }
+      @keyframes syncCalm {
+        0%, 100% { opacity: 0.45; }
+        50% { opacity: 1; }
+      }
       .row-1 { animation: rowEnter 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0s both; }
       .row-2 { animation: rowEnter 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.08s both; }
       .row-3 { animation: rowEnter 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.16s both; }
+      .bar-sheen { animation: barSheen 6.5s linear infinite; }
+      .accent-cycle-1 { animation: cycleHighlight 9s ease-in-out 0s infinite; }
+      .accent-cycle-2 { animation: cycleHighlight 9s ease-in-out 3s infinite; }
+      .accent-cycle-3 { animation: cycleHighlight 9s ease-in-out 6s infinite; }
+      .sync-dot { animation: syncCalm 3.6s ease-in-out infinite; }
       @media (prefers-reduced-motion: reduce) {
         * {
           animation: none !important;
@@ -220,6 +243,7 @@ function renderSnapshotSvg({
     <rect x="44" y="152" width="${barWidth}" height="10" rx="5" fill="${palette.barTrack}" />
     <g clip-path="url(#bar-clip-${theme})">
       ${barSegments.join('\n      ')}
+      <rect x="44" y="152" width="140" height="10" fill="url(#bar-sheen-${theme})" class="bar-sheen" />
     </g>
 
     <!-- Language Legend -->
@@ -232,7 +256,8 @@ function renderSnapshotSvg({
     <text x="634" y="44" class="sans" font-size="11" font-weight="500" fill="${palette.textSecondary}" letter-spacing="0.5">RECENTLY UPDATED REPOSITORIES</text>
     ${repoRows.join('\n')}
 
-    <text x="1156" y="242" class="sans" font-size="11" font-weight="400" fill="${palette.textSecondary}" text-anchor="end">Auto-synced via GitHub Actions · ${escapeXml(syncedDate)} UTC</text>
+    <text x="1142" y="242" class="sans" font-size="11" font-weight="400" fill="${palette.textSecondary}" text-anchor="end">Auto-synced via GitHub Actions · ${escapeXml(syncedDate)} UTC</text>
+    <circle cx="1153" cy="238.5" r="3" fill="${palette.accentText}" class="sync-dot" />
   </g>
 </svg>
 `;

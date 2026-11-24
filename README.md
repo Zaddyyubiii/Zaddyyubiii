@@ -12,25 +12,25 @@
   <a href="https://github.com/Zaddyyubiii?tab=repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/repositories-dark.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/pills/repositories-light.svg"><img alt="Repositories" src="./assets/pills/repositories-light.svg" height="34"></picture></a>
 </p>
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/dividers/wave-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/dividers/wave-light.svg">
+  <img alt="" src="./assets/dividers/wave-light.svg" width="100%">
+</picture>
+
 ## About & Current Roles
 
-<table>
-  <tr>
-    <td valign="top" width="58%">
-      <p>
-        I am a Computer Science undergraduate at IPB University working across UI/UX design and frontend development. My work focuses on turning user needs into structured digital products through UX research, user flows, wireframing, prototyping, and web implementation.
-      </p>
-      <p>
-        Outside coursework, I design campus-scale platforms and visual systems for student orientation and organizational teams, bridging product design with engineering execution.
-      </p>
-    </td>
-    <td valign="top" width="42%">
-      <p><strong>OMB IPB 63</strong><br>Information Systems, Communication &amp; Visual (Dec 2025 - Present)</p>
-      <p><strong>HIMALKOM IPB</strong><br>Talent &amp; Development, Lead Organizer of I-CONVO Podcast (Jan 2026 - Present)</p>
-      <p><strong>IPB University</strong><br>B.Sc. Computer Science (2024 - 2028)</p>
-    </td>
-  </tr>
-</table>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/roles-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/roles-light.svg">
+  <img alt="Ayubi Fathan background and current roles timeline" src="./assets/roles-light.svg" width="100%">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/dividers/rule-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/dividers/rule-light.svg">
+  <img alt="" src="./assets/dividers/rule-light.svg" width="100%">
+</picture>
 
 ## Featured Project
 
@@ -56,6 +56,12 @@
   </tr>
 </table>
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/dividers/wave-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/dividers/wave-light.svg">
+  <img alt="" src="./assets/dividers/wave-light.svg" width="100%">
+</picture>
+
 ## Selected Work
 
 ### Product & UI/UX
@@ -74,46 +80,30 @@
 - [`Project-Akhir-Metkuan`](https://github.com/Zaddyyubiii/Project-Akhir-Metkuan) (R): Quantitative methods final analysis repository.
 - [`rumah_sakit_crud`](https://github.com/Zaddyyubiii/rumah_sakit_crud) (PHP): Hospital records CRUD web application.
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/dividers/rule-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/dividers/rule-light.svg">
+  <img alt="" src="./assets/dividers/rule-light.svg" width="100%">
+</picture>
+
 ## Toolkit & Tech Stack
 
-<table>
-  <tr>
-    <td valign="top" width="34%">
-      <h4>Design &amp; UX</h4>
-      <p>
-        <img src="https://img.shields.io/badge/Figma-44578C?style=flat&logo=figma&logoColor=white" alt="Figma">
-        <img src="https://img.shields.io/badge/Affinity_Designer-44578C?style=flat&logo=affinitydesigner&logoColor=white" alt="Affinity Designer">
-        <img src="https://img.shields.io/badge/Canva-44578C?style=flat&logo=canva&logoColor=white" alt="Canva">
-        <img src="https://img.shields.io/badge/CapCut-44578C?style=flat" alt="CapCut">
-        <img src="https://img.shields.io/badge/UX_Research-44578C?style=flat" alt="UX Research">
-        <img src="https://img.shields.io/badge/User_Flow-44578C?style=flat" alt="User Flow">
-        <img src="https://img.shields.io/badge/Wireframing-44578C?style=flat" alt="Wireframing">
-        <img src="https://img.shields.io/badge/Prototyping-44578C?style=flat" alt="Prototyping">
-        <img src="https://img.shields.io/badge/Design_System-44578C?style=flat" alt="Design System">
-      </p>
-    </td>
-    <td valign="top" width="33%">
-      <h4>Languages</h4>
-      <p>
-        <img src="https://img.shields.io/badge/C-2C3A5E?style=flat&logo=c&logoColor=white" alt="C">
-        <img src="https://img.shields.io/badge/C++-2C3A5E?style=flat&logo=cplusplus&logoColor=white" alt="C++">
-        <img src="https://img.shields.io/badge/Java-2C3A5E?style=flat&logo=openjdk&logoColor=white" alt="Java">
-        <img src="https://img.shields.io/badge/Scala-2C3A5E?style=flat&logo=scala&logoColor=white" alt="Scala">
-        <img src="https://img.shields.io/badge/SQL-2C3A5E?style=flat&logo=mysql&logoColor=white" alt="SQL">
-        <img src="https://img.shields.io/badge/HTML5-2C3A5E?style=flat&logo=html5&logoColor=white" alt="HTML5">
-      </p>
-    </td>
-    <td valign="top" width="33%">
-      <h4>Development</h4>
-      <p>
-        <img src="https://img.shields.io/badge/Next.js-3A4C7A?style=flat&logo=nextdotjs&logoColor=white" alt="Next.js">
-        <img src="https://img.shields.io/badge/Git-3A4C7A?style=flat&logo=git&logoColor=white" alt="Git">
-        <img src="https://img.shields.io/badge/GitHub-3A4C7A?style=flat&logo=github&logoColor=white" alt="GitHub">
-        <img src="https://img.shields.io/badge/Wrangler-3A4C7A?style=flat&logo=cloudflare&logoColor=white" alt="Wrangler">
-      </p>
-    </td>
-  </tr>
-</table>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/toolkit-marquee-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/toolkit-marquee-light.svg">
+  <img alt="Animated marquee of Design, Languages, and Development tools" src="./assets/toolkit-marquee-light.svg" width="100%">
+</picture>
+
+<p align="center">
+  <sub><strong>Design &amp; UX:</strong> Figma, Affinity Designer, Canva, CapCut, UX Research, User Flow, Wireframing, Prototyping, Design System</sub><br>
+  <sub><strong>Languages &amp; Development:</strong> C, C++, Java, Scala, SQL, HTML5, Next.js, Git, GitHub, Wrangler</sub>
+</p>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/dividers/wave-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/dividers/wave-light.svg">
+  <img alt="" src="./assets/dividers/wave-light.svg" width="100%">
+</picture>
 
 ## Live GitHub Activity
 
@@ -126,6 +116,12 @@
 <p align="center">
   <sub>Synced daily via GitHub Actions from public repository data.</sub>
 </p>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/dividers/footer-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/dividers/footer-light.svg">
+  <img alt="" src="./assets/dividers/footer-light.svg" width="100%">
+</picture>
 
 <p align="center">
   Open to UI/UX design and frontend collaboration: <a href="https://www.linkedin.com/in/ayubifathan">LinkedIn</a> · <a href="mailto:ayubi300306@gmail.com">Email</a>

@@ -8,6 +8,11 @@
     <clipPath id="bar-clip-dark">
       <rect x="44" y="152" width="536" height="10" rx="5" />
     </clipPath>
+    <linearGradient id="bar-sheen-dark" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.32" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </linearGradient>
     <style>
       .serif {
         font-family: 'Instrument Serif', Georgia, 'Times New Roman', serif;
@@ -19,9 +24,26 @@
         0% { opacity: 0.92; transform: translateX(6px); }
         100% { opacity: 1; transform: translateX(0); }
       }
+      @keyframes barSheen {
+        0% { transform: translateX(-140px); }
+        100% { transform: translateX(680px); }
+      }
+      @keyframes cycleHighlight {
+        0%, 26%, 100% { opacity: 0.18; }
+        8%, 18% { opacity: 1; }
+      }
+      @keyframes syncCalm {
+        0%, 100% { opacity: 0.45; }
+        50% { opacity: 1; }
+      }
       .row-1 { animation: rowEnter 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0s both; }
       .row-2 { animation: rowEnter 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.08s both; }
       .row-3 { animation: rowEnter 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.16s both; }
+      .bar-sheen { animation: barSheen 6.5s linear infinite; }
+      .accent-cycle-1 { animation: cycleHighlight 9s ease-in-out 0s infinite; }
+      .accent-cycle-2 { animation: cycleHighlight 9s ease-in-out 3s infinite; }
+      .accent-cycle-3 { animation: cycleHighlight 9s ease-in-out 6s infinite; }
+      .sync-dot { animation: syncCalm 3.6s ease-in-out infinite; }
       @media (prefers-reduced-motion: reduce) {
         * {
           animation: none !important;
@@ -62,6 +84,7 @@
       <rect x="447.7" y="152" width="46.9" height="10" fill="#C4D3F2" />
       <rect x="494.6" y="152" width="39.3" height="10" fill="#C9AE90" />
       <rect x="533.9" y="152" width="46.1" height="10" fill="#586A8F" />
+      <rect x="44" y="152" width="140" height="10" fill="url(#bar-sheen-dark)" class="bar-sheen" />
     </g>
 
     <!-- Language Legend -->
@@ -87,7 +110,8 @@
     
       <g class="row-1">
         <rect x="634" y="66" width="522" height="44" rx="6" fill="#1D2538" stroke="#334263" />
-        <text x="650" y="92.5" class="sans" font-size="13.5" font-weight="500" fill="#FAE2C6">Proyek-Analisis-Data-Asah-by-Di...</text>
+        <rect x="634" y="74" width="3" height="28" rx="1.5" fill="#9BB3E8" class="accent-cycle-1" />
+        <text x="652" y="92.5" class="sans" font-size="13.5" font-weight="500" fill="#FAE2C6">Proyek-Analisis-Data-Asah-by-Di...</text>
         <rect x="944" y="77" width="106" height="22" rx="3" fill="#25304A" />
         <text x="997" y="91.5" class="sans" font-size="11" font-weight="500" fill="#FAE2C6" text-anchor="middle">Jupyter Notebook</text>
         <text x="1140" y="92" class="sans" font-size="11.5" font-weight="400" fill="#C8D3EC" text-anchor="end">Nov 13, 2026</text>
@@ -95,7 +119,8 @@
 
       <g class="row-2">
         <rect x="634" y="118" width="522" height="44" rx="6" fill="#1D2538" stroke="#334263" />
-        <text x="650" y="144.5" class="sans" font-size="13.5" font-weight="500" fill="#FAE2C6">kanboard-komdat</text>
+        <rect x="634" y="126" width="3" height="28" rx="1.5" fill="#9BB3E8" class="accent-cycle-2" />
+        <text x="652" y="144.5" class="sans" font-size="13.5" font-weight="500" fill="#FAE2C6">kanboard-komdat</text>
         <rect x="944" y="129" width="106" height="22" rx="3" fill="#25304A" />
         <text x="997" y="143.5" class="sans" font-size="11" font-weight="500" fill="#FAE2C6" text-anchor="middle">Docs</text>
         <text x="1140" y="144" class="sans" font-size="11.5" font-weight="400" fill="#C8D3EC" text-anchor="end">Oct 1, 2026</text>
@@ -103,12 +128,14 @@
 
       <g class="row-3">
         <rect x="634" y="170" width="522" height="44" rx="6" fill="#1D2538" stroke="#334263" />
-        <text x="650" y="196.5" class="sans" font-size="13.5" font-weight="500" fill="#FAE2C6">Ular-Tangga-IPB</text>
+        <rect x="634" y="178" width="3" height="28" rx="1.5" fill="#9BB3E8" class="accent-cycle-3" />
+        <text x="652" y="196.5" class="sans" font-size="13.5" font-weight="500" fill="#FAE2C6">Ular-Tangga-IPB</text>
         <rect x="944" y="181" width="106" height="22" rx="3" fill="#25304A" />
         <text x="997" y="195.5" class="sans" font-size="11" font-weight="500" fill="#FAE2C6" text-anchor="middle">C#</text>
         <text x="1140" y="196" class="sans" font-size="11.5" font-weight="400" fill="#C8D3EC" text-anchor="end">Jul 1, 2026</text>
       </g>
 
-    <text x="1156" y="242" class="sans" font-size="11" font-weight="400" fill="#C8D3EC" text-anchor="end">Auto-synced via GitHub Actions · 2026-11-24 UTC</text>
+    <text x="1142" y="242" class="sans" font-size="11" font-weight="400" fill="#C8D3EC" text-anchor="end">Auto-synced via GitHub Actions · 2026-11-24 UTC</text>
+    <circle cx="1153" cy="238.5" r="3" fill="#9BB3E8" class="sync-dot" />
   </g>
 </svg>

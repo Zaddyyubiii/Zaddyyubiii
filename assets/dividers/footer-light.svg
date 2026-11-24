@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 44" width="1200" height="44" role="img" aria-label="Animated editorial horizon footer divider">
+  <title>Animated Horizon Footer</title>
+  <defs>
+    <linearGradient id="fade-fl" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#000000" />
+      <stop offset="12%" stop-color="#FFFFFF" />
+      <stop offset="88%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#000000" />
+    </linearGradient>
+    <mask id="mask-fl">
+      <rect x="0" y="0" width="1200" height="44" fill="url(#fade-fl)" />
+    </mask>
+    <style>
+      @keyframes horizonDrift {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-300px); }
+      }
+      @keyframes centerGlide {
+        0% { transform: translateX(-180px); }
+        100% { transform: translateX(180px); }
+      }
+      .h-curve { animation: horizonDrift 12s linear infinite; }
+      .h-glide { animation: centerGlide 7s ease-in-out infinite alternate; }
+      @media (prefers-reduced-motion: reduce) {
+        * { animation: none !important; }
+      }
+    </style>
+  </defs>
+  <g mask="url(#mask-fl)">
+    <g class="h-curve">
+      <path d="M 0 26 C 75 14, 225 36, 300 26 C 375 14, 525 36, 600 26 C 675 14, 825 36, 900 26 C 975 14, 1125 36, 1200 26 C 1275 14, 1425 36, 1500 26" fill="none" stroke="#657CAF" stroke-width="1.2" stroke-opacity="0.45" />
+    </g>
+    <line x1="200" y1="26" x2="1000" y2="26" stroke="#D4B898" stroke-width="1" stroke-opacity="0.65" />
+    <g class="h-glide">
+      <rect x="510" y="24.75" width="180" height="2.5" rx="1.25" fill="#44578C" fill-opacity="0.8" />
+    </g>
+  </g>
+</svg>

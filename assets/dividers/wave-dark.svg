@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 36" width="1200" height="36" role="img" aria-label="Animated editorial wave divider">
+  <title>Animated Wave Divider</title>
+  <defs>
+    <linearGradient id="fade-wd" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#000000" />
+      <stop offset="10%" stop-color="#FFFFFF" />
+      <stop offset="90%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#000000" />
+    </linearGradient>
+    <mask id="mask-wd">
+      <rect x="0" y="0" width="1200" height="36" fill="url(#fade-wd)" />
+    </mask>
+    <style>
+      @keyframes waveFwd {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-240px); }
+      }
+      @keyframes waveRev {
+        0% { transform: translateX(-240px); }
+        100% { transform: translateX(0); }
+      }
+      .w-fwd { animation: waveFwd 10s linear infinite; }
+      .w-rev { animation: waveRev 14s linear infinite; }
+      @media (prefers-reduced-motion: reduce) {
+        * { animation: none !important; }
+      }
+    </style>
+  </defs>
+  <g mask="url(#mask-wd)">
+    <g class="w-rev">
+      <path d="M 0 18 C 60 28, 180 8, 240 18 C 300 28, 420 8, 480 18 C 540 28, 660 8, 720 18 C 780 28, 900 8, 960 18 C 1020 28, 1140 8, 1200 18 C 1260 28, 1380 8, 1440 18 C 1500 28, 1620 8, 1680 18" fill="none" stroke="#FAE2C6" stroke-width="1.2" stroke-opacity="0.35" />
+    </g>
+    <g class="w-fwd">
+      <path d="M 0 18 C 60 7, 180 29, 240 18 C 300 7, 420 29, 480 18 C 540 7, 660 29, 720 18 C 780 7, 900 29, 960 18 C 1020 7, 1140 29, 1200 18 C 1260 7, 1380 29, 1440 18 C 1500 7, 1620 29, 1680 18" fill="none" stroke="#9BB3E8" stroke-width="1.35" stroke-opacity="0.58" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 156" width="1200" height="156" role="img" aria-labelledby="tm-dark-title tm-dark-desc">
+  <title id="tm-dark-title">Toolkit and Tech Stack Marquee</title>
+  <desc id="tm-dark-desc">Continuous dual-track marquee of Design &amp; UX tools and programming/development stack.</desc>
+  <defs>
+    <clipPath id="tm-clip-dark">
+      <rect x="0" y="0" width="1200" height="156" rx="14" />
+    </clipPath>
+    <linearGradient id="edge-l-dark" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#161C2B" stop-opacity="1" />
+      <stop offset="100%" stop-color="#161C2B" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="edge-r-dark" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#161C2B" stop-opacity="0" />
+      <stop offset="100%" stop-color="#161C2B" stop-opacity="1" />
+    </linearGradient>
+    <g id="track1-dark">
+      <rect x="0" y="0" width="76" height="32" rx="6" fill="#1D2538" stroke="#9BB3E8" stroke-opacity="0.6" />
+      <text x="38" y="20.5" class="sans" font-size="13" font-weight="400" fill="#FAE2C6" text-anchor="middle">Figma</text>
+
+      <rect x="88" y="0" width="140" height="32" rx="6" fill="#1D2538" stroke="#9BB3E8" stroke-opacity="0.6" />
+      <text x="158" y="20.5" class="sans" font-size="13" font-weight="400" fill="#FAE2C6" text-anchor="middle">Affinity Designer</text>
+
+      <rect x="240" y="0" width="80" height="32" rx="6" fill="#1D2538" stroke="#9BB3E8" stroke-opacity="0.6" />
+      <text x="280" y="20.5" class="sans" font-size="13" font-weight="400" fill="#FAE2C6" text-anchor="middle">Canva</text>
+
+      <rect x="332" y="0" width="84" height="32" rx="6" fill="#1D2538" stroke="#9BB3E8" stroke-opacity="0.6" />
+      <text x="374" y="20.5" class="sans" font-size="13" font-weight="400" fill="#FAE2C6" text-anchor="middle">CapCut</text>
+
+      <rect x="428" y="0" width="116" height="32" rx="6" fill="#1D2538" stroke="#9BB3E8" stroke-opacity="0.6" />
+      <text x="486" y="20.5" class="sans" font-size="13" font-weight="400" fill="#FAE2C6" text-anchor="middle">UX Research</text>
+
+      <rect x="556" y="0" width="100" height="32" rx="6" fill="#1D2538" stroke="#9BB3E8" stroke-opacity="0.6" />
+      <text x="606" y="20.5" class="sans" font-size="13" font-weight="400" fill="#FAE2C6" text-anchor="middle">User Flow</text>
+
+      <rect x="668" y="0" width="116" height="32" rx="6" fill="#1D2538" stroke="#9BB3E8" stroke-opacity="0.6" />
+      <text x="726" y="20.5" class="sans" font-size="13" font-weight="400" fill="#FAE2C6" text-anchor="middle">Wireframing</text>
+
+      <rect x="796" y="0" width="112" height="32" rx="6" fill="#1D2538" stroke="#9BB3E8" stroke-opacity="0.6" />
+      <text x="852" y="20.5" class="sans" font-size="13" font-weight="400" fill="#FAE2C6" text-anchor="middle">Prototyping</text>
+
+      <rect x="920" y="0" width="126" height="32" rx="6" fill="#1D2538" stroke="#9BB3E8" stroke-opacity="0.6" />
+      <text x="983" y="20.5" class="sans" font-size="13" font-weight="400" fill="#FAE2C6" text-anchor="middle">Design System</text>
+    </g>
+    <g id="track2-dark">
+      <rect x="0" y="0" width="86" height="32" rx="6" fill="#25304A" />
+      <text x="43" y="20.5" class="sans" font-size="13" font-weight="500" fill="#FAE2C6" text-anchor="middle">Next.js</text>
+
+      <rect x="98" y="0" width="84" height="32" rx="6" fill="#25304A" />
+      <text x="140" y="20.5" class="sans" font-size="13" font-weight="500" fill="#FAE2C6" text-anchor="middle">HTML5</text>
+
+      <rect x="194" y="0" width="54" height="32" rx="6" fill="#25304A" />
+      <text x="221" y="20.5" class="sans" font-size="13" font-weight="500" fill="#FAE2C6" text-anchor="middle">C</text>
+
+      <rect x="260" y="0" width="66" height="32" rx="6" fill="#25304A" />
+      <text x="293" y="20.5" class="sans" font-size="13" font-weight="500" fill="#FAE2C6" text-anchor="middle">C++</text>
+
+      <rect x="338" y="0" width="70" height="32" rx="6" fill="#25304A" />
+      <text x="373" y="20.5" class="sans" font-size="13" font-weight="500" fill="#FAE2C6" text-anchor="middle">Java</text>
+
+      <rect x="420" y="0" width="76" height="32" rx="6" fill="#25304A" />
+      <text x="458" y="20.5" class="sans" font-size="13" font-weight="500" fill="#FAE2C6" text-anchor="middle">Scala</text>
+
+      <rect x="508" y="0" width="68" height="32" rx="6" fill="#25304A" />
+      <text x="542" y="20.5" class="sans" font-size="13" font-weight="500" fill="#FAE2C6" text-anchor="middle">SQL</text>
+
+      <rect x="588" y="0" width="62" height="32" rx="6" fill="#25304A" />
+      <text x="619" y="20.5" class="sans" font-size="13" font-weight="500" fill="#FAE2C6" text-anchor="middle">Git</text>
+
+      <rect x="662" y="0" width="84" height="32" rx="6" fill="#25304A" />
+      <text x="704" y="20.5" class="sans" font-size="13" font-weight="500" fill="#FAE2C6" text-anchor="middle">GitHub</text>
+
+      <rect x="758" y="0" width="96" height="32" rx="6" fill="#25304A" />
+      <text x="806" y="20.5" class="sans" font-size="13" font-weight="500" fill="#FAE2C6" text-anchor="middle">Wrangler</text>
+    </g>
+    <style>
+      .sans {
+        font-family: 'Outfit', 'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+      }
+      @keyframes marqueeLeft {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-1058px); }
+      }
+      @keyframes marqueeRight {
+        0% { transform: translateX(-866px); }
+        100% { transform: translateX(0); }
+      }
+      .m-left { animation: marqueeLeft 26s linear infinite; }
+      .m-right { animation: marqueeRight 24s linear infinite; }
+      @media (prefers-reduced-motion: reduce) {
+        * { animation: none !important; }
+      }
+    </style>
+  </defs>
+
+  <g clip-path="url(#tm-clip-dark)">
+    <rect x="0" y="0" width="1200" height="156" fill="#161C2B" />
+
+    <!-- Top Labels -->
+    <text x="36" y="28" class="sans" font-size="10.5" font-weight="500" fill="#9BB3E8" letter-spacing="0.8">DESIGN &amp; UX</text>
+    <text x="1164" y="28" class="sans" font-size="10.5" font-weight="500" fill="#9BB3E8" text-anchor="end" letter-spacing="0.8">LANGUAGES &amp; DEVELOPMENT</text>
+
+    <!-- Row 1: Gliding Left -->
+    <g transform="translate(0, 46)">
+      <g class="m-left">
+        <use href="#track1-dark" x="0" />
+        <use href="#track1-dark" x="1058" />
+        <use href="#track1-dark" x="2116" />
+      </g>
+    </g>
+
+    <!-- Row 2: Gliding Right -->
+    <g transform="translate(0, 96)">
+      <g class="m-right">
+        <use href="#track2-dark" x="0" />
+        <use href="#track2-dark" x="866" />
+        <use href="#track2-dark" x="1732" />
+      </g>
+    </g>
+
+    <!-- Feathered Horizontal Edge Fades -->
+    <rect x="0" y="38" width="90" height="114" fill="url(#edge-l-dark)" />
+    <rect x="1110" y="38" width="90" height="114" fill="url(#edge-r-dark)" />
+    <rect x="0.5" y="0.5" width="1199" height="155" rx="14" fill="none" stroke="#2F3C59" />
+  </g>
+</svg>
